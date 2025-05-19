@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Radial Gradient Test</title>
+  <style>
+    body {
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .gradient-box {
+      width: 300px;
+      height: 200px;
+      border-radius: 16px;
+      background: radial-gradient(49.55% 45.34% at 50% 0%, rgba(94, 176, 239, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0),
+                  0px 0px 0px 1px rgba(244, 244, 245, 0.1),
+                  0px 0px 0px 0px #FFF;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gradient-box">
+    Radial Gradient Box
+  </div>
+
+</body>
+</html>
