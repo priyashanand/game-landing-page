@@ -9,8 +9,8 @@ const Games = () => {
     <main >
       {/* <div className='w-[1400px] h-96 bg-black'></div> */}
       <Intro/>
-      <GameLogic/>
       <Character/>
+      <GameLogic/>
       <StoryDesign/>
       <ItsTime/>
     </main>
