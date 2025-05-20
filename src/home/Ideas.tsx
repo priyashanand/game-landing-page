@@ -17,7 +17,7 @@ const Ideas: React.FC = () => {
         {/* Buttons */}
         <div className="flex items-center gap-6">
           {/* Contact Us button with arrow */}
-          <button className="inline-flex items-center gap-2 bg-white text-black text-sm font-medium py-2.5 px-5 rounded-lg hover:bg-gray-200 transition">
+          <button className="inline-flex items-center gap-2 bg-white text-black text-sm font-medium py-2.5 px-6 rounded-lg hover:bg-gray-200 transition">
             Contact Us
             <svg
               xmlns="http://www.w3.org/2000/svg"

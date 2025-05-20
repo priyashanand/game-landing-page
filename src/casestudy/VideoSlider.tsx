@@ -27,7 +27,7 @@ const allSlides = [...videoData, ...videoData];
 
 const VideoSlider: React.FC = () => {
   return (
-    <div className="overflow-hidden bg-black py-10">
+    <div className="overflow-hidden bg-black py-10 pt-[130px]">
       <div className="flex w-max animate-slide gap-10">
         {allSlides.map((video, index) => (
           <VideoCard key={index} {...video} />

@@ -1,4 +1,5 @@
 import React from "react";
+import SocialLinks from "./SocialLinks";
 
 interface ContactInfoProps {
   email: string;
@@ -7,7 +8,7 @@ interface ContactInfoProps {
 
 const ContactInfo: React.FC<ContactInfoProps> = ({ email, location }) => {
   return (
-    <div className="flex items-center gap-[40px_58px] justify-between flex-wrap w-full">
+    <div className="flex items-center justify-between flex-wrap w-full">
       <div className="self-stretch flex flex-col items-stretch text-xl text-[rgba(117,117,117,1)] whitespace-nowrap leading-[1.2] w-[188px] my-auto rounded-[0px_0px_0px_0px]">
         <h3 className="font-bold">Email</h3>
         <a 
@@ -22,6 +23,7 @@ const ContactInfo: React.FC<ContactInfoProps> = ({ email, location }) => {
         <h3 className="font-bold">Based in</h3>
         <p className="font-normal mt-2.5">{location}</p>
       </div>
+      <SocialLinks/>
     </div>
   );
 };

@@ -3,6 +3,7 @@ import Intro from '../casestudy/Intro'
 import RecentWorks from '../casestudy/RecentWorks'
 import Blog from '../casestudy/Blog'
 import VideoSlider from '../casestudy/VideoSlider'
+import Ready from '../casestudy/Ready'
 
 const CaseStudies:React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const CaseStudies:React.FC = () => {
       <RecentWorks/>
       <Blog/>
       <VideoSlider/>
+      <Ready/>
     </main>
   )
 }

@@ -1,6 +1,7 @@
 
 import React from "react";
 import { useForm } from "react-hook-form";
+import {Link} from "react-router-dom"
 
 type FormValues = {
   fullName: string;
@@ -12,7 +13,7 @@ const ContactForm: React.FC = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors, isSubmitting }
+    formState: { errors, }
   } = useForm<FormValues>({
     defaultValues: {
       fullName: "",
@@ -90,7 +91,7 @@ const ContactForm: React.FC = () => {
             required: "Message is required",
             minLength: { value: 10, message: "Message must be at least 10 characters" }
           })}
-          className="w-full mt-10 bg-transparent border-b border-zinc-700 pb-2 text-zinc-300 focus:outline-none focus:border-zinc-400 resize-none h-20"
+          className="w-full mt-10 bg-transparent border-b border-zinc-700 pb-2 text-zinc-300 focus:outline-none focus:border-zinc-400 "
           aria-invalid={errors.message ? "true" : "false"}
         />
         {errors.message && (
@@ -98,14 +99,18 @@ const ContactForm: React.FC = () => {
         )}
       </div>
 
-      <button
-        type="submit"
-        disabled={isSubmitting}
-        className="bg-blend-normal bg-zinc-950 shadow-[0px_0px_0px_rgba(0,0,0,0)] flex w-[228px] max-w-full flex-col overflow-hidden items-center text-base text-zinc-400 font-medium mt-[65px] pt-[17px] pb-[11px] px-[46px] rounded-2xl border border-zinc-800 hover:bg-zinc-900 transition-colors max-md:mt-10 max-md:px-5 relative"
-      >
-        <span className="relative z-10">Contact Us</span>
-        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-blend-normal w-[103px] h-px bg-zinc-700" />
-      </button>
+      <div className="pt-[40px]">
+        <button type="submit" className="relative group py-4">
+          <div className="absolute w-[228px] h-[56px] top-[1px] left-[1px] bg-[#09090B] rounded-lg shadow-[0_0_0_1px_rgba(255,255,255,0.1)]" />
+          <span className="absolute w-[226px] h-[1px] left-[10px] top-[47px] rounded bg-gradient-to-r from-cyan-400/0 via-cyan-400/90 to-cyan-400/0" />
+          <Link
+            to="/contact"
+            className="relative z-10 w-[228px] h-[28px] rounded-lg flex items-center justify-center text-[#A1A1AA] text-[14px] font-medium leading-[24px]"
+          >
+            Contact Us
+          </Link>
+        </button>
+      </div>
     </form>
   );
 };

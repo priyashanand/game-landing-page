@@ -4,7 +4,7 @@ function InputDesign() {
   return (
     <div className=" px-[104px] pt-[63px]">
 
-      <div className="px-10 py-16 w-full bg-[#101012]">
+      <div >
         <div>
           <div className="flex gap-5">
             <div className="w-[61%]">

@@ -1,18 +1,18 @@
 import React from "react";
 import ContactForm from "./ContactForm";
 import ContactInfo from "./ContactInfo";
-import SocialLinks from "./SocialLinks";
+// import SocialLinks from "./SocialLinks";
 
 const ContactUs: React.FC = () => {
   return (
-    <div className="w-full max-w-[1239px] mt-[65px] max-md:max-w-full max-md:mt-10">
-        <div className="gap-5 flex justify-between max-md:flex-col max-md:items-stretch">
+    <div className="w-full mt-[65px] max-md:max-w-full max-md:mt-10 px-[104px] pb-[124px]">
+        <div className="gap-[75px] flex justify-between max-md:flex-col max-md:items-stretch">
           {/* Left column with image */}
           <div className="w-[39%] max-md:w-full max-md:ml-0">
             <img
               src="/assets/contact.png"
               alt="Contact illustration"
-              className="aspect-[0.65] object-contain w-full grow rounded-3xl max-md:max-w-full max-md:mt-10"
+              className=" object-contain w-full rounded-3xl "
             />
           </div>
           
@@ -30,7 +30,7 @@ const ContactUs: React.FC = () => {
               </div>
               
               {/* Contact form */}
-              <div className="w-[485px] max-w-full text-base text-[rgba(94,94,94,1)] font-normal leading-[1.2] mt-[60px] max-md:mt-10">
+              <div className=" max-w-full text-base text-[rgba(94,94,94,1)] font-normal leading-[1.2] mt-[60px] max-md:mt-10">
                 <ContactForm />
               </div>
               
@@ -40,7 +40,7 @@ const ContactUs: React.FC = () => {
                   email="contact@clyde.com" 
                   location="Los Angeles,California" 
                 />
-                <SocialLinks />
+                {/* <SocialLinks /> */}
               </div>
             </div>
           </div>

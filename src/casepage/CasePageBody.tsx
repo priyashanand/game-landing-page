@@ -231,54 +231,58 @@ const CasePageBody: React.FC<CaseNameProps> = ({ casename }) => {
         </div>
       </div>
 
-      <div className="flex items- gap-8">
-        {/* Text Block */}
-        <div className="flex flex-col items-start justify-between w-1/2 gap-16">
-          <div>
+      <div className=' pt-[115px]'>
+        <div className="flex justify-between rounded-[44px] bg-[#131313]">
+          {/* Text Block */}
+          <div className="flex flex-col items-start justify-between w-1/2 gap-16 pl-[60px] py-[60px]">
+            <div>
+              <img
+                src={selectedCase.logoImage}
+                alt=""
+                className="max-w-full h-auto object-contain"
+              />
+            </div>
+            <h1 className="text-[32px] text-white font-medium">
+              Founder of the company shares his experience with Clyde
+            </h1>
+            <div>
+              <p className="text-[24px] text-[#BEBDBD] font-medium">{selectedCase.founder.name}</p>
+              <p className="text-[20px] text-[#666666] font-normal">{selectedCase.founder.desc}</p>
+            </div>
+          </div>
+
+          {/* Play Button in Between */}
+          <div className="flex-shrink-0 place-content-center">
+            <PlayButton />
+          </div>
+
+          {/* Founder Image */}
+          <div className="w-1/3 flex justify-center bg-[radial-gradient(49.55%_45.34%_at_50%_0%,rgba(94,176,239,0.5)_0%,rgba(0,0,0,0)_100%),radial-gradient(49.55%_45.34%_at_50%_100%,rgba(94,176,239,0.5)_0%,rgba(0,0,0,0)_100%),radial-gradient(49.55%_45.34%_at_100%_50%,rgba(94,176,239,0.5)_0%,rgba(0,0,0,0)_100%)] bg-no-repeat bg-cover pl-[60px] pr-[60px]">
             <img
-              src={selectedCase.logoImage}
+              src={selectedCase.founder.image}
               alt=""
-              className="max-w-full h-auto object-contain"
+              className="max-w-full h-auto object-contain rounded-xl "
             />
           </div>
-          <h1 className="text-[32px] text-white font-medium">
-            Founder of the company shares his experience with Clyde
-          </h1>
-          <div>
-            <p className="text-[24px] text-[#BEBDBD] font-medium">{selectedCase.founder.name}</p>
-            <p className="text-[20px] text-[#666666] font-normal">{selectedCase.founder.desc}</p>
-          </div>
-        </div>
-
-        {/* Play Button in Between */}
-        <div className="flex-shrink-0 place-content-center">
-          <PlayButton />
-        </div>
-
-        {/* Founder Image */}
-        <div className="w-1/3 flex justify-center">
-          <img
-            src={selectedCase.founder.image}
-            alt=""
-            className="max-w-full h-auto object-contain rounded-xl"
-          />
         </div>
       </div>
 
 
 
-      <div>
-        <div>
-          <h1>The Problem</h1>
-          <p>{selectedCase.problem}</p>
+      <div className='flex justify-between gap-[41px] pt-[117px]'>
+        <div className='py-[115px] px-[40px] w-[33%] rounded-[24px] border border-[rgba(255,255,255,0.1)] bg-[linear-gradient(135deg,rgba(27,30,35,0.5)_0%,rgba(22,25,29,0.5)_100%)] backdrop-blur-[6px]'>
+          <h1 className='text-[32px] font-bold pb-[40px] text-white'>The Problem</h1>
+          <p className='text-[22px] text-[#A1A1AA]'>{selectedCase.problem}</p>
         </div>
-        <div>
-          <h1>How we solved it</h1>
-          <p>{selectedCase.solution[0]}</p>
-          <p>{selectedCase.solution[1]}</p>
-          <p>{selectedCase.solution[2]}</p>
-          <p>{selectedCase.solution[3]}</p>
-          <p>{selectedCase.solution[4]}</p>
+        <div className='py-[115px] px-[40px] w-[66%] rounded-[24px] border border-[rgba(255,255,255,0.1)] bg-[linear-gradient(135deg,rgba(27,30,35,0.5)_0%,rgba(22,25,29,0.5)_100%)] backdrop-blur-[6px]'>
+          <h1 className='text-[32px] font-bold pb-[44px] text-white'>How we solved it</h1>
+          <div className='flex flex-col gap-[25px]'>
+            <p className='text-[22px] text-[#A1A1AA]'>{selectedCase.solution[0]}</p>
+            <p className='text-[22px] text-[#A1A1AA]'>{selectedCase.solution[1]}</p>
+            <p className='text-[22px] text-[#A1A1AA]'>{selectedCase.solution[2]}</p>
+            <p className='text-[22px] text-[#A1A1AA]'>{selectedCase.solution[3]}</p>
+            <p className='text-[22px] text-[#A1A1AA]'>{selectedCase.solution[4]}</p>
+          </div>
         </div>
       </div>
     </div>
