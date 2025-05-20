@@ -1,20 +1,10 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Header1 = () => {
-  const location = useLocation();
-  const pathname = location.pathname;
+
 
   // Active link logic
-  const isHome = pathname === '/';
-  const isGames = pathname === '/games';
-  const isCaseStudies = [
-    '/casestudies',
-    '/csp/revolvingGames',
-    '/csp/netsol',
-    '/csp/metaende',
-    '/csp/cerwinvega',
-  ].includes(pathname);
-  const isContact = pathname === '/contact';
+
 
   return (
     <header className="w-full h-20 relative z-50">
