@@ -7,8 +7,14 @@ const Header = () => {
   // Active link logic
   const isHome = pathname === '/';
   const isGames = pathname === '/games';
-  const isCaseStudies = pathname === '/casestudies';
-  const isContact = pathname === '/contact'; // used to remove highlight
+  const isCaseStudies = [
+    '/casestudies',
+    '/csp/revolvingGames',
+    '/csp/netsol',
+    '/csp/metaende',
+    '/csp/cerwinvega',
+  ].includes(pathname);
+  const isContact = pathname === '/contact';
 
   return (
     <header className="w-full h-20 relative z-50">

@@ -5,7 +5,7 @@ import CaseStudies from './pages/CaseStudies';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Games from './pages/Games';
-
+import CaseStudyPage from './pages/CaseStudyPage';
 
 
 
@@ -27,6 +27,7 @@ function App() {
             <Route path="/games" element={<Games />} />
             <Route path="/casestudies" element={<CaseStudies />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/csp/:casename" element={<CaseStudyPage />} />
           </Routes>
           <Footer />
         </div>

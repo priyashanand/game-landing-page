@@ -3,7 +3,7 @@ import React from 'react'
 const ItsTime:React.FC = () => {
   return (
     <div className=' px-[104px] pt-[151px]'>
-      <div className='flex flex-col items-center text-center bg-[url("assets/timebg.png")] pt-[63px] px-[219px] rounded-[40px]'>
+      <div className='flex flex-col items-center text-center bg-[url("assets/timebg.png")] bg-contain pt-[63px] px-[219px] rounded-[40px]'>
       <h1 className="text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br from-white to-[#71717A] text-transparent bg-clip-text leading-tight">Its time to get Started! <br />
       Launch Loud. Grow Fast. Stay Legendary.</h1>
       <div className='py-[57px]'>
