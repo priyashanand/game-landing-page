@@ -3,6 +3,13 @@ import React from "react";
 interface LogoGridProps {
   logoUrls: string[];
 }
+// const LogoSlider:React.FC <LogoGridProps> = ({logoUrls}) =>{
+//   return(
+//     <div>
+
+//     </div>
+//   )
+// }
 
 const LogoGrid: React.FC<LogoGridProps> = ({ logoUrls }) => {
   // Define the width and height classes for each logo

@@ -23,7 +23,7 @@ const Visuals = () => {
           <img
             src="/assets/section3img1.png"
             alt="Scalable by Design"
-            className="w-full h-64 object-cover rounded-xl mb-6"
+            className="w-full h-80 object-cover rounded-xl mb-6"
           />
           <div className="text-[20px] font-semibold text-[#E4E4E7] mb-4 px-8">Scalable by Design</div>
           <div className="text-[16px] text-[#A1A1AA] font-normal px-8">
@@ -37,7 +37,7 @@ const Visuals = () => {
           <img
             src="/assets/section3img2.png"
             alt="Built for Play"
-            className="w-full h-64 object-cover rounded-xl mb-6"
+            className="w-full h-80 object-cover rounded-xl mb-6"
           />
           <div className="text-[20px] font-semibold text-[#E4E4E7] mb-4 px-8">Built for Play</div>
           <div className="text-[16px] text-[#A1A1AA] font-normal px-8">
@@ -51,7 +51,7 @@ const Visuals = () => {
           <img
             src="/assets/section3img3.png"
             alt="Frictionless Gameplay"
-            className="w-full h-64 object-cover rounded-xl mb-6"
+            className="w-full h-80 object-cover rounded-xl mb-6"
           />
           <div className="text-[20px] font-semibold text-[#E4E4E7] mb-4 px-8">Frictionless Gameplay</div>
           <div className="text-[16px] text-[#A1A1AA] font-normal px-8">

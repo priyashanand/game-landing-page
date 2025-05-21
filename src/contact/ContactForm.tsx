@@ -102,7 +102,7 @@ const ContactForm: React.FC = () => {
       <div className="pt-[40px]">
         <button type="submit" className="relative group py-4">
           <div className="absolute w-[228px] h-[56px] top-[1px] left-[1px] bg-[#09090B] rounded-lg shadow-[0_0_0_1px_rgba(255,255,255,0.1)]" />
-          <span className="absolute w-[226px] h-[1px] left-[10px] top-[47px] rounded bg-gradient-to-r from-cyan-400/0 via-cyan-400/90 to-cyan-400/0" />
+          <span className="absolute w-[226px] h-[1px] left-[10px] top-[57px] rounded bg-gradient-to-r from-cyan-400/0 via-cyan-400/90 to-cyan-400/0" />
           <Link
             to="/contact"
             className="relative z-10 w-[228px] h-[28px] rounded-lg flex items-center justify-center text-[#A1A1AA] text-[14px] font-medium leading-[24px]"

@@ -6,9 +6,9 @@ import ContactInfo from "./ContactInfo";
 const ContactUs: React.FC = () => {
   return (
     <div className="w-full mt-[65px] max-md:max-w-full max-md:mt-10 px-[104px] pb-[124px]">
-        <div className="gap-[75px] flex justify-between max-md:flex-col max-md:items-stretch">
+        <div className="gap-[85px] flex justify-between max-md:flex-col max-md:items-stretch">
           {/* Left column with image */}
-          <div className="w-[39%] max-md:w-full max-md:ml-0">
+          <div className="w-[45%] max-md:w-full max-md:ml-0">
             <img
               src="/assets/contact.png"
               alt="Contact illustration"
@@ -17,7 +17,7 @@ const ContactUs: React.FC = () => {
           </div>
           
           {/* Right column with form and contact info */}
-          <div className="w-[61%] ml-5 max-md:w-full max-md:ml-0">
+          <div className="w-[55%] ml-5 max-md:w-full max-md:ml-0">
             <div className="flex w-full flex-col mt-[23px] max-md:max-w-full max-md:mt-10">
               {/* Section title */}
               <div>

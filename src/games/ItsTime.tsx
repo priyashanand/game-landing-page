@@ -2,13 +2,13 @@ import React from 'react'
 
 const ItsTime:React.FC = () => {
   return (
-    <div className=' px-[104px] pt-[151px]'>
-      <div className='flex flex-col items-center text-center bg-[url("/assets/timebg.png")] bg-contain pt-[63px] px-[219px] rounded-[40px]'>
+    <div className=' px-[104px] pt-[151px] pb-[78px]'>
+      <div className='flex flex-col items-center text-center bg-[url("/assets/timebg.png")] bg-cover pt-[63px] px-[219px] rounded-[40px]'>
       <h1 className="text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br from-white to-[#71717A] text-transparent bg-clip-text leading-tight">Its time to get Started! <br />
       Launch Loud. Grow Fast. Stay Legendary.</h1>
       <div className='py-[57px]'>
-        <button className="inline-flex items-center gap-2  text-[#E8E8E8] text-sm font-medium py-2.5 px-5 rounded-[10px] ">
-          View Casestudy
+        <button className="inline-flex items-center gap-2 bg-[#FFFFFF]/5 borer text-[#E8E8E8] text-sm font-medium py-2.5 px-5 rounded-[10px] ">
+        Get Started
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

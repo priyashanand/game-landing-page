@@ -30,6 +30,7 @@ function GameLogic() {
           {/* Left Side: Main Text Card */}
           <div className="w-[69%]">
             <article className="grow w-full rounded-3xl bg-neutral-900 h-full">
+              <img src="/assets/game1.png" alt="" className="w-12 absolute pt-6"/>
               <div className="overflow-hidden py-12 pl-10 w-full min-h-[348px] h-full flex flex-col justify-between">
                 <h2 className="pr-24 max-w-full text-5xl font-semibold text-white leading-[64px] w-[732px]">
                   Game Logic –<br />

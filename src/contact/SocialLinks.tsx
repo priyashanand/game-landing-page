@@ -11,7 +11,7 @@ const SocialLinks: React.FC = () => {
         aria-label="Twitter"
       >
         <img
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/0663489a89124112f32865c4e37f61183e1e7cc0?placeholderIfAbsent=true"
+          src="/assets/social1.png"
           className="aspect-[1] object-contain w-8 self-stretch shrink-0 my-auto"
           alt="Twitter"
         />
@@ -24,7 +24,11 @@ const SocialLinks: React.FC = () => {
         className="self-stretch flex w-8 shrink-0 h-8 my-auto hover:opacity-80 transition-opacity"
         aria-label="Instagram"
       >
-        <div className="w-full h-full bg-zinc-400 rounded-lg" />
+        <img
+          src="/assets/social2.png"
+          className="aspect-[1] object-contain w-8 self-stretch shrink-0 my-auto"
+          alt="Twitter"
+        />
       </a>
       
       <a 
@@ -35,7 +39,7 @@ const SocialLinks: React.FC = () => {
         aria-label="LinkedIn"
       >
         <img
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/d5025d0777bf3116e5b75ee63e32d850931e3b87?placeholderIfAbsent=true"
+          src="/assets/social3.png"
           className="aspect-[1] object-contain w-8 self-stretch shrink-0 my-auto"
           alt="LinkedIn"
         />

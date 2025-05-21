@@ -13,14 +13,14 @@ function HeroSection() {
   return (
     <section className="py-14 w-full bg-black">
       <div className="px-28 mx-auto  max-md:px-16 max-sm:px-5">
-        <div className="flex gap-24 max-md:gap-10 max-sm:gap-8">
+        <div className="flex flex-col sm:flex-row justify-center gap-24 max-md:gap-10 max-sm:gap-8">
           <header className="w-full">
-            <h1 className="text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br from-white to-[#71717A] text-transparent bg-clip-text leading-tight">
+            <h1 className="text-[24px] sm:text-[48px] text-center sm:text-start font-bold tracking-[-1.2px] bg-gradient-to-br from-white to-[#71717A] text-transparent bg-clip-text leading-tight">
               Who said creativity <br />can't be strategic?
             </h1>
           </header>
           <div className="w-full">
-            <p className="text-lg leading-7 max-md:text-base max-md:leading-6">
+            <p className="text-lg text-center sm:text-start leading-7 max-md:text-base max-md:leading-6">
               <span className="text-zinc-400">
                 In a world full of cluttered interfaces and rushed dev cycles,
                 we're here to do things differently. We partner with ambitious

@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 const NextLevel: React.FC = () => {
   return (
-    <div className="bg-[url('/assets/bg.png')] bg-contain bg-no-repeat bg-center bg-black py-[338px] px-[104px] text-center relative">
-      <h1 className='text-[60px] font-semibold text-white leading-tight'>
+    <div className="bg-[url('/assets/bg2.png')]  bg-contain bg-no-repeat bg-center bg-black py-[338px] px-[104px] text-center relative">
+      <h1 className='text-[60px] font-semibold  text-white leading-tight'>
         Let’s take your product to
       </h1>
       
