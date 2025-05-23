@@ -28,8 +28,8 @@ const allSlides = [...videoData, ...videoData];
 
 const VideoSlider: React.FC = () => {
   return (
-    <div className="overflow-hidden bg-black py-10 pt-[130px]">
-      <h1 className="text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br from-white to-[#71717A] text-transparent bg-clip-text leading-tight px-[104px] pb-[64px]">Hear it from their experience</h1>
+    <div className="overflow-hidden bg-black sm:py-10 pt-[72px] sm:pt-[130px]">
+      <h1 className="text-[23px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br from-white to-[#71717A] text-transparent bg-clip-text leading-tight text-center sm:text-start px-[22px] sm:px-[104px] pb-[32px] sm:pb-[64px]">Hear it from their experience</h1>
       <div className="hidden sm:flex w-max animate-slide gap-10">
         {allSlides.map((video, index) => (
           <VideoCard key={index} {...video} />
