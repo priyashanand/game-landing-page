@@ -1,10 +1,11 @@
+import BlogMobileSlider from "../components/BlogMobileSlider";
 
 
 function InputDesign() {
   return (
-    <div className=" px-[104px] pt-[63px]">
+    <div className="px-[22px] sm:px-[104px] pt-[32px] sm:pt-[63px]">
 
-      <div >
+      <div className="hidden sm:block">
         <div>
           <div className="flex gap-5">
             <div className="w-[61%]">
@@ -12,7 +13,7 @@ function InputDesign() {
                 <img
                   src="/assets/ipimg1.png"
                   alt="The Evolution of Gaming: From Pixel to Photorealism"
-                  className="object-contain w-full rounded-3xl aspect-[1.49]"
+                  className="sm:object-contain w-full rounded-3xl sm:aspect-[1.49]"
                 />
                 <h2 className="mt-6 text-2xl font-medium tracking-tight text-zinc-100">
                   The Evolution of Gaming: From Pixel to Photorealism
@@ -78,6 +79,9 @@ function InputDesign() {
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <BlogMobileSlider/>
       </div>
     </div>
   );

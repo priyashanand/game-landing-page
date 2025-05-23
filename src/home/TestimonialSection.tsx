@@ -1,9 +1,10 @@
 import React from 'react';
+import MobileTestimonial from './MobileTestimonial';
 
 const TestimonialSection: React.FC = () => {
   return (
-    <div className="px-[104px] py-12 bg-black">
-      <div className="flex flex-row gap-[42px] overflow-hidden ">
+    <div className="px-[22px] sm:px-[104px] py-[68px] sm:py-12 sm:bg-black">
+      <div className="hidden sm:flex flex-row gap-[42px] overflow-hidden ">
         {/* Left panel */}
         <div className=" flex w-[33%] items-center rounded-2xl backdrop-blur-md border border-white/10 bg-gradient-to-br from-[#1B1E23]/50 to-[#16191D]/50 justify-start p-6 md:p-10 ">
           <h3 className="text-white text-[24px] md:text-[28px] leading-[36px] md:leading-[40px] font-medium max-w-sm">
@@ -56,6 +57,14 @@ const TestimonialSection: React.FC = () => {
             />
           </div>
         </div>
+      </div>
+      <div className='sm:hidden'>
+        <div className="flex justify-center sm:justify-start sm:px-[104px] sm:pb-[80px]">
+          <div className="text-[23px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center from-white to-[#71717A] text-transparent bg-clip-text leading-tight mb-6">
+          Design-first development that turns ideas into impact
+          </div>
+        </div>
+        <MobileTestimonial />
       </div>
     </div>
   );

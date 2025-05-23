@@ -9,8 +9,8 @@ interface SliderCaseCardProps {
 
 const SliderCaseCard: React.FC<SliderCaseCardProps> = ({ description, imageUrl , url}) => {
   return (
-    <div className="flex-shrink-0 w-[856px] bg-[#141414] rounded-[30px] p-[25px] flex gap-6">
-      <img src={imageUrl} alt="card" className="rounded-xl w-1/2 object-cover" />
+    <div className="flex-shrink-0 sm:w-[856px] bg-[#141414] rounded-[30px] sm:p-[25px] flex flex-col sm:flex-row gap-6">
+      <img src={imageUrl} alt="card" className="rounded-xl sm:w-1/2 sm:object-cover" />
       <div className="flex flex-col justify-center gap-8 w-1/2">
         <p className="text-[#8B8A8A] text-[16px] md:text-[20px]">
           {description}

@@ -1,5 +1,6 @@
 import React from 'react';
 import SliderCaseCard from '../components/SliderCaseCard';
+import HomeMobSlider from '../components/HomeMobSlider';
 
 const caseStudies = [
   {
@@ -36,11 +37,19 @@ const Slider: React.FC = () => {
   const allSlides = [...caseStudies, ...caseStudies];
 
   return (
-    <div className="bg-black py-10 overflow-hidden relative">
-      <div className="flex w-max gap-10 animate-slide">
+    <div className=" bg-black py-10 overflow-hidden relative">
+      <div className="flex justify-center sm:justify-start sm:px-[104px] sm:pb-[80px]">
+        <div className="text-[23px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br from-white to-[#71717A] text-transparent bg-clip-text leading-tight mb-6">
+          Case Studies
+        </div>
+      </div>
+      <div className="hidden sm:flex w-max gap-10 animate-slide">
         {allSlides.map((item, index) => (
           <SliderCaseCard key={index} description={item.description} imageUrl={item.imageUrl} url={item.url} />
         ))}
+      </div>
+      <div className='sm:hidden px-[22px]'>
+        <HomeMobSlider />
       </div>
     </div>
   );

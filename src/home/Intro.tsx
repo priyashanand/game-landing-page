@@ -3,8 +3,8 @@ import React from 'react'
 const Intro: React.FC = () => {
   return (
     <div className='flex flex-col  items-center pt-[63px] sm:pt-[112px]'>
-      <h1 className='text-[24px] sm:text-[72px]  font-bold  text-white sm:px-[118px] leading-[77.04px] tracking-[-1.8px]'>Precision Crafted Software for </h1>
-      <h1 className='text-[24px] sm:text-[72px] font-bold leading-[77.04px]  text-white tracking-[-1.8px]'>Visionary Brands</h1>
+      <h1 className='text-[24px] sm:text-[72px]  font-bold  text-white sm:px-[118px] sm:leading-[77.04px] tracking-[-1.8px]'>Precision Crafted Software for </h1>
+      <h1 className='text-[24px] sm:text-[72px] font-bold sm:leading-[77.04px]  text-white tracking-[-1.8px]'>Visionary Brands</h1>
       <div className= 'hidden sm:block text-[#A1A1AA] font-medium text-[13px] sm:text-[20px] pt-6 sm:pt-9'>We create brands, design seamless experiences, and build </div>
       <p className='hidden sm:block text-[#A1A1AA] font-medium text-[13px] sm:text-[20px] pb-[33px] sm:pb-[52px] '>powerful digital products that stand out.</p>
       

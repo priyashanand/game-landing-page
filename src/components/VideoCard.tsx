@@ -10,10 +10,10 @@ interface VideoCardProps {
 
 const VideoCard: React.FC<VideoCardProps> = ({ imageUrl, name, title, heading }) => {
   return (
-    <section className="p-5 mx-auto my-0 max-w-[888px] max-md:p-4 max-sm:p-2.5">
-      <article className="overflow-hidden relative bg-[#0F0F0F] rounded-[36px] w-[888px]">
+    <section className="sm:p-5 mx-auto my-0 w-screen sm:max-w-[888px] ">
+      <article className="overflow-hidden relative bg-[#0F0F0F] rounded-[36px] w-full sm:w-[888px]">
         <VideoPreview imageUrl={imageUrl} name={name} title={title} />
-        <h2 className="px-16 py-0 mb-8 text-[32px] font-medium leading-10 text-zinc-400 max-md:px-10 max-sm:px-5 max-sm:text-2xl max-sm:leading-9">
+        <h2 className="sm:px-16 sm:py-0 sm:mb-8 text-[16px] sm:text-[32px] font-medium sm:leading-10 text-zinc-400 ">
           {heading}
         </h2>
       </article>

@@ -1,4 +1,5 @@
 import LogoGrid from "./LogoGrid";
+import LogoSlider from "./LogoSlider";
 
 function HeroSection() {
   // Logo URLs for the grid
@@ -36,7 +37,12 @@ function HeroSection() {
             </p>
           </div>
         </div>
+        <div className="hidden sm:block">
         <LogoGrid logoUrls={logoUrls} />
+        </div>
+        <div className="sm:hidden">
+        <LogoSlider logoUrls={logoUrls} />
+        </div>
       </div>
     </section>
   );

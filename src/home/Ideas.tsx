@@ -1,15 +1,16 @@
 import React from 'react';
+import CallToActionCard from './CallToActionCard';
 
 const Ideas: React.FC = () => {
   return (
-    <div className="bg-black px-[104px] py-16">
-      <div className="flex items-center justify-between bg-[#101012] px-[60px] py-[50px] rounded-2xl w-full">
+    <div className=" bg-black sm:px-[104px] sm:py-16">
+      <div className="hidden sm:flex items-center flex-col sm:flex-row justify-between bg-[#101012] px-[22px] sm:px-[60px] py-[20px] sm:py-[50px] rounded-2xl w-full">
         {/* Text content */}
-        <div className="max-w-2xl">
-          <h2 className="text-[36px] font-bold tracking-[-1px] bg-gradient-to-br from-white to-[#71717A] text-transparent bg-clip-text leading-tight mb-2">
+        <div className="sm:max-w-2xl">
+          <h2 className="text-[16px] text-center sm:text-start sm:text-[36px] font-bold tracking-[-1px] bg-gradient-to-br from-white to-[#71717A] text-transparent bg-clip-text leading-tight sm:mb-2">
             See great ideas come to life
           </h2>
-          <p className="text-[16px] text-[#A1A1AA]">
+          <p className="text-[12px] sm:text-[16px] text-[#A1A1AA]">
             Book a 30-minute strategy call with our team — no fluff, just real insight. Products evolve.
           </p>
         </div>
@@ -17,7 +18,7 @@ const Ideas: React.FC = () => {
         {/* Buttons */}
         <div className="flex items-center gap-6">
           {/* Contact Us button with arrow */}
-          <button className="inline-flex items-center gap-2 bg-white text-black text-sm font-medium py-2.5 px-6 rounded-lg hover:bg-gray-200 transition">
+          <button className="hidden sm:inline-flex items-center gap-2 bg-white text-black text-sm font-medium py-2.5 px-6 rounded-lg hover:bg-gray-200 transition">
             Contact Us
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -32,10 +33,13 @@ const Ideas: React.FC = () => {
           </button>
 
           {/* Explore About Us button */}
-          <button className="text-white text-sm font-medium hover:text-gray-300 transition">
+          <button className="text-[#6A6A6A] sm:text-white text-sm border py-1 sm:py-0 px-4 sm:px-0 border-[#171616] sm:border-none font-medium hover:text-gray-300 transition">
             Explore About Us
           </button>
         </div>
+      </div>
+      <div className='sm:hidden px-[22px]'>
+        <CallToActionCard/>
       </div>
     </div>
   );

@@ -1,22 +1,28 @@
-const Visuals = () => {
-  return (
-    <div className="bg-black px-6 sm:px-12 lg:px-[104px] py-20">
-      {/* Heading */}
-      <div className="flex">
+import React from "react";
+import VisualMobileSlider from "../components/VisualMobileSlider";
 
-        <div className="text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br from-white to-[#71717A] text-transparent bg-clip-text leading-tight mb-6">
+const Visuals:React.FC = () => {
+  return (
+    <div className="bg-black px-6 sm:px-12 lg:px-[104px] py-6 sm:py-20 ">
+      {/* Heading */}
+      <div className="flex justify-center sm:justify-start">
+
+        <div className="text-[23px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br from-white to-[#71717A] text-transparent bg-clip-text leading-tight mb-6">
           More Than Visuals — <br /> It’s the Full Experience
         </div>
       </div>
 
       {/* Subheading */}
-      <div className="text-[16px] text-[#A1A1AA] mb-16">
+      <div className="sm:block hidden text-[16px] text-[#A1A1AA] mb-16">
         Designing a game is about more than visuals — it's about <br className="hidden sm:block" />
         creating an experience that’s clear, immersive, and built to grow.
       </div>
+      <div className="sm:hidden">
+        <VisualMobileSlider/>
+      </div>
 
       {/* Card Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="hidden sm:grid grid-cols-1 md:grid-cols-3 gap-8 sm:pt-0 pt-[45px]">
         {/* Card 1 */}
         <div className="flex rounded-xl bg-[#18181b]/50 shadow-[0_0_0_1px_rgba(244,244,245,0.1)]
  flex-col h-full">

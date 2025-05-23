@@ -6,7 +6,7 @@ interface SliderCaseCardProps {
 
 const SliderCaseCard: React.FC<SliderCaseCardProps> = ({ imageUrl }) => {
   return (
-    <div className="flex-shrink-0 w-[346px] rounded-[30px] overflow-hidden">
+    <div className="flex-shrink-0 w-[236px] sm:w-[346px] rounded-[30px] overflow-hidden">
       <img
         src={imageUrl}
         alt="card"

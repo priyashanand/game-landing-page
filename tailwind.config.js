@@ -16,6 +16,7 @@ export default {
         },
       },
       animation: {
+        scrollX: 'slide 12s linear infinite',
         slide: 'slide 40s linear infinite',
       },
     },

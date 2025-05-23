@@ -1,5 +1,6 @@
 import React from "react";
 import VideoCard from "../components/VideoCard";
+import VideoMobileSlider from "../components/VideoMobileSlider";
 
 const videoData = [
   {
@@ -29,10 +30,13 @@ const VideoSlider: React.FC = () => {
   return (
     <div className="overflow-hidden bg-black py-10 pt-[130px]">
       <h1 className="text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br from-white to-[#71717A] text-transparent bg-clip-text leading-tight px-[104px] pb-[64px]">Hear it from their experience</h1>
-      <div className="flex w-max animate-slide gap-10">
+      <div className="hidden sm:flex w-max animate-slide gap-10">
         {allSlides.map((video, index) => (
           <VideoCard key={index} {...video} />
         ))}
+      </div>
+      <div className="sm:hidden px-[22px]">
+        <VideoMobileSlider/>
       </div>
     </div>
   );

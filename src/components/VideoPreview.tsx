@@ -9,7 +9,7 @@ interface VideoPreviewProps {
 
 const VideoPreview: React.FC<VideoPreviewProps> = ({ imageUrl, name, title }) => {
   return (
-    <div className="overflow-hidden relative mb-6 w-full rounded-[32px] max-sm:rounded-3xl px-[60px] pt-[43px] ">
+    <div className="overflow-hidden relative sm:mb-6 w-full rounded-[32px] max-sm:rounded-3xl sm:px-[60px] sm:pt-[43px] ">
       <img
         src={imageUrl}
         className="block w-full h-auto"
