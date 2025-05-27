@@ -36,9 +36,7 @@ const VideoMobileSlider:React.FC = () => {
 
   return (
     <div className="sm:hidden pt-5 ">
-      {/* <span ><img src="/assets/section4img1.png" alt="" className="h-20"/></span> */}
-      
-
+      {/* <span ><img src="/assets/section4img1.png" alt="" className="h-20"/></span> */}      f
       {/* Mobile View Carousel */}
       <div className="md:hidden relative ">
         <div className="flex items-center justify-between mb-4">

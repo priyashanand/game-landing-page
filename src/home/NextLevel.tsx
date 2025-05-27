@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 const NextLevel: React.FC = () => {
   return (
-    <div className="bg-[url('/assets/bg3.png')]  bg-contain bg-no-repeat bg-center bg-black sm:py-[338px] sm:px-[104px] text-center relative">
+    <div className="bg-[url('/assets/bg4.png')] sm:bg-[url('/assets/bg3.png')] bg-cover sm:bg-contain bg-no-repeat bg-center bg-black  pt-[68px]  sm:pt-[338px] sm:px-[104px] text-center relative pb-10 sm:pb-[338px]">
       <h1 className='text-[23px] sm:text-[60px] font-semibold  text-white leading-tight'>
         Let’s take your product to
       </h1>
@@ -23,7 +23,7 @@ const NextLevel: React.FC = () => {
         do for your business.
       </p>
       <Link to='/contact'>
-      <button className='mt-8 border border-[#FFE1E1] backdrop-blur-[2px] bg-[#008E99] text-[#0C0C0C] text-[10px] sm:text-[16px] font-medium py-[5px] sm:py-[12px] px-[20px] rounded-[12px]'>
+      <button className='mt-8  backdrop-blur-[2px] bg-[#3D4550] text-[#F0F0F0] sm:text-[#0C0C0C] text-[10px] sm:text-[16px] font-medium py-[5px] sm:py-[12px] px-[20px] rounded-[10px] sm:rounded-[12px]'>
         Contact Us
       </button>
       </Link>

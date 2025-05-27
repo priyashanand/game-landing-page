@@ -3,7 +3,7 @@ import CallToActionCard from './CallToActionCard';
 
 const Ideas: React.FC = () => {
   return (
-    <div className=" bg-black sm:px-[104px] sm:py-16">
+    <div className=" bg-[#09090B] sm:bg-black sm:px-[104px] sm:py-16">
       <div className="hidden sm:flex items-center flex-col sm:flex-row justify-between bg-[#101012] px-[22px] sm:px-[60px] py-[20px] sm:py-[50px] rounded-2xl w-full">
         {/* Text content */}
         <div className="sm:max-w-2xl">

@@ -16,7 +16,7 @@ function AppContent() {
   const shouldApplyStyle = !(isContactPage || isCaseStudyPage);
 
   return (
-    <div style={{ backgroundColor: '#000' }}>
+    <div style={{ backgroundColor: '#09090B' }}>
       <div
         className={`font-inter antialiased text-gray-900 ${shouldApplyStyle ? 'text-white' : ''}`}
         style={

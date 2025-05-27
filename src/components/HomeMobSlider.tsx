@@ -1,28 +1,32 @@
 import React from 'react'
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 import { CircleArrowLeft, CircleArrowRight } from "lucide-react"; 
 
 
 const cards = [
   {
-    imgMain: "/assets/cardimg6.png",
-    title: "Scalable By Design",
-    desc: "As your game evolves, so does the design. From new content drops, expansions - our systems grows"
+    imgMain: "/assets/cardimg7.png",
+    desc: "Revolving Games team needed a bold new identity and a cleaner dashboard to improve player engagement and retention. Brand refresh + dashboard overhaul = smoother play and high....",
+    url: "/csp/revolvingGames"
+  },
+  {
+    imgMain: "/assets/cardimg8.png",
+    desc: "Revolving Games team needed a bold new identity and a cleaner dashboard to improve player engagement and retention. Brand refresh + dashboard overhaul = smoother play and high....",
+    url: "/csp/netsol"
+
+  },
+  {
+    imgMain: "/assets/cardimg9.png",
+    desc: "Revolving Games team needed a bold new identity and a cleaner dashboard to improve player engagement and retention. Brand refresh + dashboard overhaul = smoother play and high....",
+    url: "/csp/metaende"
+
   },
   {
     imgMain: "/assets/cardimg6.png",
-    title: "Scalable By Design",
-    desc: "As your game evolves, so does the design. From new content drops, expansions - our systems grows"
-  },
-  {
-    imgMain: "/assets/cardimg6.png",
-    title: "Scalable By Design",
-    desc: "As your game evolves, so does the design. From new content drops, expansions - our systems grows"
-  },
-  {
-    imgMain: "/assets/cardimg6.png",
-    title: "Scalable By Design",
-    desc: "As your game evolves, so does the design. From new content drops, expansions - our systems grows"
+    desc: "Revolving Games team needed a bold new identity and a cleaner dashboard to improve player engagement and retention. Brand refresh + dashboard overhaul = smoother play and high....",
+    url: "/csp/cerwinvega"
+
   }
 ];
 
@@ -49,11 +53,18 @@ const HomeMobSlider:React.FC = () => {
                   <div className="bg-[#101012] border-[#363535] rounded-3xl shadow-md">
                     <div className="rounded-xl flex items-center justify-center ">
 
-                      <img src={card.imgMain} alt="" className="h-auto w-full object-contain" />
+                      <img src={card.imgMain} alt="" className="h-auto w-full object-contain px-4 pt-4" />
                     </div>
                     {/* <img src="/assets/section4img6.png" alt="" className="h-16 object-contain mb-6" /> */}
-                    <div className="text-[16px] font-semibold py-4 px-4 text-[#E4E4E7]">{card.title}</div>
-                    <div className=" text-[14px] px-4 pb-5 text-[#A1A1AA]">{card.desc}</div>
+                    <div className=" text-[14px] px-4 py-4 text-[#A1A1AA]">{card.desc}</div>
+                    <Link to={card.url}>
+                    <button className="flex items-center text-[13px] px-4 pb-5 font-semibold text-[#00C6CC]">
+                    Read Full Casestudy
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M3.5 3L8.5 8L3.5 13M7.5 3L12.5 8L7.5 13" stroke="#00C6CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    </Link>
                   </div>
                 </div>
               ))}

@@ -3,7 +3,7 @@ import MobileTestimonial from './MobileTestimonial';
 
 const TestimonialSection: React.FC = () => {
   return (
-    <div className="px-[22px] sm:px-[104px] py-[68px] sm:py-12 sm:bg-black">
+    <div className="px-[22px] sm:px-[104px] pt-[68px] pb-[24px] sm:py-12 bg-[#09090B] sm:bg-black">
       <div className="hidden sm:flex flex-row gap-[42px] overflow-hidden ">
         {/* Left panel */}
         <div className=" flex w-[33%] items-center rounded-2xl backdrop-blur-md border border-white/10 bg-gradient-to-br from-[#1B1E23]/50 to-[#16191D]/50 justify-start p-6 md:p-10 ">

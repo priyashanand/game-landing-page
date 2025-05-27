@@ -3,7 +3,7 @@ import VisualMobileSlider from "../components/VisualMobileSlider";
 
 const Visuals:React.FC = () => {
   return (
-    <div className="bg-black px-6 sm:px-12 lg:px-[104px] py-6 sm:py-20 ">
+    <div className="bg-[#09090B] sm:bg-black px-6 sm:px-12 lg:px-[104px] py-6 sm:py-20 ">
       {/* Heading */}
       <div className="flex justify-center sm:justify-start">
 
