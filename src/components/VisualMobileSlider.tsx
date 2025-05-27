@@ -10,14 +10,14 @@ const cards = [
     desc: "As your game evolves, so does the design. From new content drops, expansions - our systems grows"
   },
   {
-    imgMain: "/assets/visualSlider1.png",
-    title: "Scalable By Design",
-    desc: "As your game evolves, so does the design. From new content drops, expansions - our systems grows"
+    imgMain: "/assets/visualSlider2.png",
+    title: "Built for Play",
+    desc: "A streamlined design system for games that puts players first and scales as you grow."
   },
   {
-    imgMain: "/assets/visualSlider1.png",
-    title: "Scalable By Design",
-    desc: "As your game evolves, so does the design. From new content drops, expansions - our systems grows"
+    imgMain: "/assets/visualSlider3.png",
+    title: "Frictionless Gameplay",
+    desc: "We focus on what matters most — the player experience. Clear menu, focused layouts, and controls."
   }
 ];
 

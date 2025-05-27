@@ -47,8 +47,7 @@ const ImageMobileSlider:React.FC = () => {
                     <img src={card.imgMain} alt="" className="h-auto w-full object-contain" />
                     </div>
                     {/* <img src="/assets/section4img6.png" alt="" className="h-16 object-contain mb-6" /> */}
-                    <div className="text-[16px] font-semibold py-4 px-4 text-[#E4E4E7]">{card.title}</div>
-                    <div className=" text-[14px] px-4 pb-5 text-[#A1A1AA]">{card.desc}</div>
+                    
                   </div>
                 </div>
               ))}

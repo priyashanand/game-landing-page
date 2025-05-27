@@ -23,7 +23,7 @@ const cards = [
 
   },
   {
-    imgMain: "/assets/cardimg6.png",
+    imgMain: "/assets/cardimg10.png",
     desc: "Revolving Games team needed a bold new identity and a cleaner dashboard to improve player engagement and retention. Brand refresh + dashboard overhaul = smoother play and high....",
     url: "/csp/cerwinvega"
 
