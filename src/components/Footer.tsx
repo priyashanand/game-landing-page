@@ -5,11 +5,11 @@ function Footer() {
         <h2 className="self-stretch my-auto text-[18px] sm:text-2xl text-center sm:text-start font-semibold tracking-tighter leading-tight text-neutral-200">
           Clyde.
         </h2>
-        <nav className="flex gap-8 items-center justify-between self-stretch my-auto text-[14px] sm:text-lg font-medium min-h-[49px] min-w-60 text-[#9D9D9D] sm:text-neutral-200 px-[30px] sm:px-0">
+        <nav className="flex  items-center justify-between self-stretch my-auto text-[14px] sm:text-lg font-medium min-h-[49px min-w-[60px] text-[#9D9D9D] sm:text-neutral-200 px-[30px] sm:px-0">
           <a href="#" className="self-stretch my-auto hover:text-white">Home</a>
-          <a href="#" className="self-stretch my-auto hover:text-white">Games</a>
-          <a href="#" className="self-stretch my-auto hover:text-white">About</a>
-          <a href="#" className="self-stretch my-auto hover:text-white">Contact Us</a>
+          <a href="/games" className="self-stretch my-auto hover:text-white">Games</a>
+          <a href="/casestudies" className="self-stretch my-auto hover:text-white">CaseStudies</a>
+          <a href="/contact" className="self-stretch my-auto hover:text-white">Contact Us</a>
         </nav>
       </div>
       <div className="sm:hidden w-full pt-[22px] border-t-1 border-[#111111]">

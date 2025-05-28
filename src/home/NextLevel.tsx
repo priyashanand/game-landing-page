@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+
 const NextLevel: React.FC = () => {
   return (
     <div className="bg-[url('/assets/bg4.png')] sm:bg-[url('/assets/bg3.png')] bg-cover sm:bg-contain bg-no-repeat bg-center bg-black  pt-[68px]  sm:pt-[338px] sm:px-[104px] text-center relative pb-10 sm:pb-[338px]">
