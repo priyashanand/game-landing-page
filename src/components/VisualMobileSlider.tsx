@@ -10,9 +10,9 @@ const cards = [
     desc: "As your game evolves, so does the design. From new content drops, expansions - our systems grows"
   },
   {
-    imgMain: "/assets/visualSlider2.png",
+    imgMain: "/assets/visualSlider7.png",
     title: "Built for Play",
-    desc: "A streamlined design system for games that puts players first and scales as you grow."
+    desc: "A streamlined design system customized for games that puts players first and scales as you grow."
   },
   {
     imgMain: "/assets/visualSlider3.png",
@@ -50,7 +50,7 @@ const VisualMobileSlider:React.FC = () => {
                     </div>
                     {/* <img src="/assets/section4img6.png" alt="" className="h-16 object-contain mb-6" /> */}
                     <div className="text-[16px] font-semibold py-4 px-4 text-[#E4E4E7]">{card.title}</div>
-                    <div className=" text-[14px] px-4 pb-5 text-[#A1A1AA]">{card.desc}</div>
+                    <div className=" text-[13px] px-4 pb-5 text-[#A1A1AA]">{card.desc}</div>
                   </div>
                 </div>
               ))}

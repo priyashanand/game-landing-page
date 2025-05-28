@@ -18,8 +18,8 @@ const NextLevel: React.FC = () => {
         />
       </div>
 
-      <p className='text-[#CAC6DD] text-[12px] sm:text-[20px] mt-6'>
-        See what strategic design, branding, and development can <br className='sm:hidden' />
+      <p className='text-[#CAC6DD] text-[12px] sm:text-[20px] mt-6 px-[60px]'>
+        See what strategic design, branding, and development can 
         do for your business.
       </p>
       <Link to='/contact'>

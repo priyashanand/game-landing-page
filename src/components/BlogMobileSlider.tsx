@@ -63,18 +63,23 @@ const BlogMobileSlider:React.FC = () => {
         </div>
 
         {/* Dots Indicator */}
-        <div className="flex items-center justify-between space-x-2 ">
+        <div className="flex items-center justify-between space-x-2 mt-2 ">
           <button onClick={handlePrev} className="p-2">
             <CircleArrowLeft className="w-6 h-6 text-gray-600" />
           </button>
-          <div className='flex items-center justify-center gap-4'>
+          <div className='flex gap-4'>
             {cards.map((card, i) => (
-              <div
+              <button
                 key={i}
-                className={`items-center justify-center rounded-[6px] ${i === current ? " border-[2px] border-[#A2A2A2] w-[54px] h-[54px]" : " w-[48px] h-[48px]"}`}
+                onClick={() => setCurrent(i)}
+                className={`rounded-[6px] overflow-hidden focus:outline-none ${
+                  i === current
+                    ? "border-[2px] border-[#A2A2A2] w-[54px] h-[54px]"
+                    : "w-[48px] h-[48px]"
+                }`}
               >
-                <img src={card.imgMain} alt="" className='w-full h-full '/>
-              </div>
+                <img src={card.imgMain} alt="" className="w-full h-full object-cover" />
+              </button>
             ))}
           </div>
           <button onClick={handleNext} className="p-2">

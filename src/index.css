@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .custom-bg-style {
+    border-radius: 16px;
+    background: radial-gradient(40.55% 11.34% at 50% 0%, rgba(94, 176, 239, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    box-shadow: 0 0 0 1px rgba(244, 244, 245, 0.1);
+    color: white;
+  }
+
+  @media (max-width: 640px) {
+    .custom-bg-style {
+      background: radial-gradient(40.55% 3.34% at 50% 0%, rgba(94, 176, 239, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+  }
+}

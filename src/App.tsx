@@ -7,6 +7,7 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Games from './pages/Games';
 import CaseStudyPage from './pages/CaseStudyPage';
+import RevolvingGames from './pages/RevolvingGames'
 
 function AppContent() {
   const location = useLocation();
@@ -17,20 +18,7 @@ function AppContent() {
 
   return (
     <div style={{ backgroundColor: '#09090B' }}>
-      <div
-        className={`font-inter antialiased text-gray-900 ${shouldApplyStyle ? 'text-white' : ''}`}
-        style={
-          shouldApplyStyle
-            ? {
-                borderRadius: '16px',
-                background:
-                  'radial-gradient(40.55% 11.34% at 50% 0%, rgba(94, 176, 239, 0.5) 0%, rgba(0, 0, 0, 0) 100%)',
-                boxShadow: '0 0 0 1px rgba(244, 244, 245, 0.1)',
-                color: 'white',
-              }
-            : undefined
-        }
-      >
+      <div className={`font-inter antialiased text-gray-900 ${shouldApplyStyle ? 'text-white custom-bg-style' : ''}`}>
         {/* Header logic */}
         {isContactPage ? <Header1 /> : <Header />}
 
@@ -40,6 +28,7 @@ function AppContent() {
           <Route path="/casestudies" element={<CaseStudies />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/csp/:casename" element={<CaseStudyPage />} />
+          <Route path="/revgames" element={<RevolvingGames />} />
         </Routes>
 
         {/* Footer only if not on contact page */}

@@ -45,7 +45,7 @@ const VideoMobileSlider:React.FC = () => {
             <div className="flex transition-transform duration-300 ease-in-out" style={{ transform: `translateX(-${current * 100}%)` }}>
             {videoData.map((video, index) => (
               <div key={index} className="min-w-full px-2">
-              <div className="bg-[#101012] border-[#363535] rounded-[12px] sm:rounded-3xl shadow-md px-4 pt-4">
+              <div className="bg-[#101012] border-[#363535] rounded-[12px] sm:rounded-3xl shadow-md px-[12px] pt-4">
                 <div className="relative rounded-xl flex items-center justify-center ">
                   <div></div>
                   <div className='absolute'>
@@ -59,7 +59,7 @@ const VideoMobileSlider:React.FC = () => {
                 </div>
                 {/* <img src="/assets/section4img6.png" alt="" className="h-16 object-contain mb-6" /> */}
                 
-                <div className='text-[#A1A1AA] text-[15px] px-[15px] pt-4 pb-5'>{video.title}</div>
+                <div className='text-[#A1A1AA] text-[15px] pt-4 pb-5'>{video.heading}</div>
               </div>
             </div>
             ))}
@@ -73,14 +73,19 @@ const VideoMobileSlider:React.FC = () => {
           <button onClick={handlePrev} className="p-2">
             <CircleArrowLeft className="w-6 h-6 text-gray-600" />
           </button>
-          <div className='flex  gap-4'>
+          <div className='flex gap-4'>
             {videoData.map((card, i) => (
-              <div
+              <button
                 key={i}
-                className={` rounded-[6px] ${i === current ? " border-[2px] border-[#A2A2A2] w-[54px] h-[54px]" : " w-[48px] h-[48px]"}`}
+                onClick={() => setCurrent(i)}
+                className={`rounded-[6px] overflow-hidden focus:outline-none ${
+                  i === current
+                    ? "border-[2px] border-[#A2A2A2] w-[54px] h-[54px]"
+                    : "w-[48px] h-[48px]"
+                }`}
               >
-                <img src={card.imageUrl} alt="" className='w-full h-full '/>
-              </div>
+                <img src={card.imageUrl} alt="" className="w-full h-full object-cover" />
+              </button>
             ))}
           </div>
           <button onClick={handleNext} className="p-2">

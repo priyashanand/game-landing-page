@@ -8,23 +8,27 @@ const cards = [
   {
     imgMain: "/assets/cardimg7.png",
     desc: "Revolving Games team needed a bold new identity and a cleaner dashboard to improve player engagement and retention. Brand refresh + dashboard overhaul = smoother play and high....",
+    bimgurl: '/assets/bimg1.png',
     url: "/csp/revolvingGames"
   },
   {
     imgMain: "/assets/cardimg8.png",
     desc: "Metaedge team needed a bold new identity and a cleaner dashboard to improve player engagement and retention. Brand refresh + dashboard overhaul = smoother play and high....",
+    bimgurl: '/assets/bimg2.png',
     url: "/csp/metaende"
 
   },
   {
     imgMain: "/assets/cardimg9.png",
     desc: "A world-class automotive giant needed a private ride-hailing solution that maximized the ROI of unused luxury vehicles while delivering a seamless, secure experience for their executives.....",
+    bimgurl: '/assets/bimg3.png',
     url: "/csp/netsol"
 
   },
   {
     imgMain: "/assets/cardimg10.png",
     desc: "Cerwin Vega, a legacy name in high-performance audio systems, approached us at Clyde to modernize their digital presence. Their previous website, though functional, no longer.......",
+    bimgurl: '/assets/bimg4.png',
     url: "/csp/cerwinvega"
 
   }
@@ -78,14 +82,19 @@ const HomeMobSlider:React.FC = () => {
           <button onClick={handlePrev} className="p-2">
             <CircleArrowLeft className="w-6 h-6 text-gray-600" />
           </button>
-          <div className='flex  gap-4'>
+          <div className='flex gap-4'>
             {cards.map((card, i) => (
-              <div
+              <button
                 key={i}
-                className={` rounded-[6px] ${i === current ? " border-[2px] border-[#A2A2A2] w-[54px] h-[54px]" : " w-[48px] h-[48px]"}`}
+                onClick={() => setCurrent(i)}
+                className={`rounded-[6px] overflow-hidden focus:outline-none ${
+                  i === current
+                    ? "border-[2px] border-[#A2A2A2] w-[54px] h-[54px]"
+                    : "w-[48px] h-[48px]"
+                }`}
               >
-                <img src={card.imgMain} alt="" className='w-full h-full '/>
-              </div>
+                <img src={card.bimgurl} alt="" className="w-full h-full object-cover" />
+              </button>
             ))}
           </div>
           <button onClick={handleNext} className="p-2">
