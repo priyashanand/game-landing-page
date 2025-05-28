@@ -9,7 +9,7 @@ interface FeatureCardProps {
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ iconSrc, title, description }) => {
   return (
-    <article className="grow px-[20px] sm:px-10 py-[24px] sm:py-12 w-full rounded-3xl bg-neutral-900 h-full">
+    <article className="grow px-[20px] sm:px-10 py-[24px] sm:py-12 w-full rounded-[14px] sm:rounded-3xl bg-[#141414] h-full">
       <img src={iconSrc} alt={title} className="object-contain aspect-square w-[37px] sm:w-[78px]" />
       <h3 className="mt-[17px] sm:mt-9 text-[20px] sm:text-2xl font-semibold tracking-tight sm:leading-loose text-[#F4E4E4]">
         {title}
@@ -29,7 +29,7 @@ function GameLogic() {
         <div className="flex flex-col sm:flex-row gap-[34px] sm:gap-5 items-stretch">
           {/* Left Side: Main Text Card */}
           <div className="sm:w-[69%]">
-            <article className="grow w-full rounded-3xl bg-neutral-900 h-full">
+            <article className="grow w-full rounded-3xl bg-[#101215] h-full">
               <img src="/assets/game1.png" alt="" className="w-10 sm:w-12 absolute sm:pt-6"/>
               <div className="overflow-hidden py-[28px] sm:py-12 pl-[35px] sm:pl-10 w-full h-full flex flex-col justify-between gap-[26px] sm:gap-[0]">
                 <h2 className="sm:pr-24 max-w-full text-[24px] sm:text-5xl font-semibold text-white sm:leading-[64px] ">

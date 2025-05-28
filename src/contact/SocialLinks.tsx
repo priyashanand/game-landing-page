@@ -2,7 +2,7 @@ import React from "react";
 
 const SocialLinks: React.FC = () => {
   return (
-    <div className="self-stretch flex items-center gap-[35px] justify-between w-[166px] my-auto">
+    <div className="self-stretch flex items-center gap-[26px] justify-between w-[124px] my-auto">
       <a 
         href="https://twitter.com" 
         target="_blank" 
@@ -12,7 +12,7 @@ const SocialLinks: React.FC = () => {
       >
         <img
           src="/assets/social1.png"
-          className="aspect-[1] object-contain w-8 self-stretch shrink-0 my-auto"
+          className="aspect-[1/1] h-[24px] object-contain w-8 self-stretch shrink-0 my-auto"
           alt="Twitter"
         />
       </a>
@@ -26,7 +26,7 @@ const SocialLinks: React.FC = () => {
       >
         <img
           src="/assets/social2.png"
-          className="aspect-[1] object-contain w-8 self-stretch shrink-0 my-auto"
+          className="aspect-[1] h-[24px] object-contain w-8 self-stretch shrink-0 my-auto"
           alt="Twitter"
         />
       </a>
@@ -40,7 +40,7 @@ const SocialLinks: React.FC = () => {
       >
         <img
           src="/assets/social3.png"
-          className="aspect-[1] object-contain w-8 self-stretch shrink-0 my-auto"
+          className="aspect-[1] h-[24px] object-contain w-8 self-stretch shrink-0 my-auto"
           alt="LinkedIn"
         />
       </a>

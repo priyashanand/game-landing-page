@@ -5,17 +5,17 @@ import { CircleArrowLeft, CircleArrowRight } from "lucide-react";
 
 const cards = [
   {
-    imgMain: "/assets/visualSlider1.png",
+    imgMain: "/assets/visualSlider6.png",
     title: "Scalable By Design",
     desc: "As your game evolves, so does the design. From new content drops, expansions - our systems grows"
   },
   {
-    imgMain: "/assets/visualSlider1.png",
+    imgMain: "/assets/visualSlider4.png",
     title: "Scalable By Design",
     desc: "As your game evolves, so does the design. From new content drops, expansions - our systems grows"
   },
   {
-    imgMain: "/assets/visualSlider1.png",
+    imgMain: "/assets/visualSlider5.png",
     title: "Scalable By Design",
     desc: "As your game evolves, so does the design. From new content drops, expansions - our systems grows"
   }
@@ -57,7 +57,7 @@ const ImageMobileSlider:React.FC = () => {
         </div>
 
         {/* Dots Indicator */}
-        <div className="flex items-center justify-between space-x-2 mt-2 ">
+        <div className="flex items-center justify-between space-x-2 mt-6 ">
           <button onClick={handlePrev} className="p-2">
             <CircleArrowLeft className="w-6 h-6 text-gray-600" />
           </button>

@@ -16,7 +16,12 @@ const ContactUs: React.FC = () => {
             <img
               src="/assets/contact.png"
               alt="Contact illustration"
-              className=" object-contain w-full h-[352px] rounded-3xl "
+              className="hidden sm:block object-contain w-full h-[352px] rounded-3xl "
+            />
+            <img
+              src="/assets/contact1.png"
+              alt="Contact illustration"
+              className="sm:hidden object-contain w-full h-[352px] rounded-3xl "
             />
           </div>
           

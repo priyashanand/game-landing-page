@@ -5,22 +5,22 @@ import { CircleArrowLeft, CircleArrowRight } from "lucide-react";
 
 const cards = [
   {
-    imgMain: "/assets/ipimg1.png",
+    imgMain: "/assets/mobblog4.png",
     title: "The Evolution of Gaming: From Pixel to Photorealism",
     desc: "April 21,2025 . 10 mins Read"
   },
   {
-    imgMain: "/assets/ipimg2.png",
+    imgMain: "/assets/mobblog1.png",
     title: "Game Trends in 2025",
     desc: "April 21,2025 . 10 mins Read"
   },
   {
-    imgMain: "/assets/ipimg3.png",
+    imgMain: "/assets/mobblog2.png",
     title: "Building Our Latest Game",
     desc: "April 21,2025 . 10 mins Read"
   },
   {
-    imgMain: "/assets/ipimg4.png",
+    imgMain: "/assets/mobblog3.png",
     title: "From Sketch to Screen: Our Art Pipeline Explained",
     desc: "April 21,2025 . 10 mins Read"
   }
@@ -40,13 +40,13 @@ const BlogMobileSlider:React.FC = () => {
 
       {/* Mobile View Carousel */}
       <div className="md:hidden relative ">
-        <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center justify-between mb-8">
           
           <div className="flex-1 overflow-hidden">
             <div className="flex transition-transform duration-300 ease-in-out" style={{ transform: `translateX(-${current * 100}%)` }}>
               {cards.map((card, index) => (
                 <div key={index} className="min-w-full px-2">
-                    <div className="bg-[#101012] border-[#363535] rounded-3xl shadow-md">
+                    <div className="bg-[#101012] border-[#363535] rounded-[12px] sm:rounded-3xl shadow-md">
                     <div className="rounded-xl flex items-center justify-center ">
 
                     <img src={card.imgMain} alt="" className="h-auto w-full object-contain" />
@@ -63,15 +63,15 @@ const BlogMobileSlider:React.FC = () => {
         </div>
 
         {/* Dots Indicator */}
-        <div className="flex items-center justify-between space-x-2 mt-2 ">
+        <div className="flex items-center justify-between space-x-2 ">
           <button onClick={handlePrev} className="p-2">
             <CircleArrowLeft className="w-6 h-6 text-gray-600" />
           </button>
-          <div className='flex  gap-4'>
+          <div className='flex items-center justify-center gap-4'>
             {cards.map((card, i) => (
               <div
                 key={i}
-                className={` rounded-[6px] ${i === current ? " border-[2px] border-[#A2A2A2] w-[54px] h-[54px]" : " w-[48px] h-[48px]"}`}
+                className={`items-center justify-center rounded-[6px] ${i === current ? " border-[2px] border-[#A2A2A2] w-[54px] h-[54px]" : " w-[48px] h-[48px]"}`}
               >
                 <img src={card.imgMain} alt="" className='w-full h-full '/>
               </div>

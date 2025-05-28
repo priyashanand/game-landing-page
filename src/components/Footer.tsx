@@ -5,16 +5,16 @@ function Footer() {
         <h2 className="self-stretch my-auto text-[18px] sm:text-2xl text-center sm:text-start font-semibold tracking-tighter leading-tight text-neutral-200">
           Clyde.
         </h2>
-        <nav className="flex gap-8 items-center justify-between self-stretch my-auto text-[14px] sm:text-lg font-medium min-h-[49px] min-w-60 text-neutral-200">
+        <nav className="flex gap-8 items-center justify-between self-stretch my-auto text-[14px] sm:text-lg font-medium min-h-[49px] min-w-60 text-[#9D9D9D] sm:text-neutral-200 px-[30px] sm:px-0">
           <a href="#" className="self-stretch my-auto hover:text-white">Home</a>
           <a href="#" className="self-stretch my-auto hover:text-white">Games</a>
           <a href="#" className="self-stretch my-auto hover:text-white">About</a>
           <a href="#" className="self-stretch my-auto hover:text-white">Contact Us</a>
         </nav>
       </div>
-      <div className="sm:hidden pt-[45px]">
+      <div className="sm:hidden pt-[45px] ">
         <p className="text-[12px] text-[#5F5F5F] text-center">Follow us on</p>
-        <div className="flex justify-between pt-[24px]">
+        <div className="flex justify-between pt-[24px] ">
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
               <g clip-path="url(#clip0_506_375)">
@@ -58,7 +58,7 @@ function Footer() {
             </svg>
           </div>
         </div>
-        <p className="self-stretch my-auto text-sm font-medium leading-none text-slate-300 pt-[60px]">
+        <p className="self-stretch my-auto text-sm font-medium leading-none text-[#5F5F5F] sm:text-slate-300 pt-[60px]">
           © Clyde 2025. All rights reserved
         </p>
       </div>

@@ -45,7 +45,7 @@ const ContactForm: React.FC = () => {
             required: "Name is required",
             minLength: { value: 2, message: "Name must be at least 2 characters" }
           })}
-          className="w-full mt-10 bg-transparent border-b border-zinc-700 pb-2 text-zinc-300 focus:outline-none focus:border-zinc-400"
+          className="w-full sm:mt-10 bg-transparent border-b border-zinc-700 pb-2 text-zinc-300 focus:outline-none focus:border-zinc-400"
           aria-invalid={errors.fullName ? "true" : "false"}
         />
         {errors.fullName && (
@@ -70,7 +70,7 @@ const ContactForm: React.FC = () => {
               message: "Please enter a valid email address"
             }
           })}
-          className="w-full mt-10 bg-transparent border-b border-zinc-700 pb-2 text-zinc-300 focus:outline-none focus:border-zinc-400"
+          className="w-full sm:mt-10 bg-transparent border-b border-zinc-700 pb-2 text-zinc-300 focus:outline-none focus:border-zinc-400"
           aria-invalid={errors.email ? "true" : "false"}
         />
         {errors.email && (
@@ -91,7 +91,7 @@ const ContactForm: React.FC = () => {
             required: "Message is required",
             minLength: { value: 10, message: "Message must be at least 10 characters" }
           })}
-          className="w-full mt-10 bg-transparent border-b border-zinc-700 pb-2 text-zinc-300 focus:outline-none focus:border-zinc-400 "
+          className="w-full sm:mt-10 bg-transparent border-b border-zinc-700 pb-2 text-zinc-300 focus:outline-none focus:border-zinc-400 "
           aria-invalid={errors.message ? "true" : "false"}
         />
         {errors.message && (
@@ -117,9 +117,9 @@ const ContactForm: React.FC = () => {
           <span className="absolute w-[113px] h-[1px] left-[3px] top-[33px] rounded bg-gradient-to-r from-cyan-400/0 via-cyan-400/90 to-cyan-400/0" />
           <Link
             to="/contact"
-            className="relative z-10 w-[113px] h-[34px] rounded-lg -top-3.5 flex items-center justify-center text-[#A1A1AA] text-[14px] font-medium sm:leading-[24px]"
+            className="relative z-10 w-[113px] h-[34px] rounded-lg -top-3.5 flex items-center justify-center text-[#A1A1AA] text-[8px] font-medium sm:leading-[24px]"
           >
-            Contact Us
+            Send Message
           </Link>
         </button>
       </div>

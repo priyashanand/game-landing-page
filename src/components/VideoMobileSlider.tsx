@@ -6,19 +6,19 @@ import PlayButton from './PlayButton';
 
 const videoData = [
   {
-    imageUrl: "/assets/video1.png",
+    imageUrl: "/assets/video3.png",
     name: "Mathew Thomas",
     title: "Founder, Revolving Games",
     heading: "Founder talks about his website redesign",
   },
   {
-    imageUrl: "/assets/video1.png",
+    imageUrl: "/assets/video2.png",
     name: "Alisha Ray",
     title: "Creative Director, Nova Studios",
     heading: "Why they chose our UI expertise",
   },
   {
-    imageUrl: "/assets/video1.png",
+    imageUrl: "/assets/video.png",
     name: "Chris Van",
     title: "CEO, Pixel Forge",
     heading: "Improving gameplay through better UX",
@@ -36,7 +36,7 @@ const VideoMobileSlider:React.FC = () => {
 
   return (
     <div className="sm:hidden pt-5 ">
-      {/* <span ><img src="/assets/section4img1.png" alt="" className="h-20"/></span> */}      f
+      {/* <span ><img src="/assets/section4img1.png" alt="" className="h-20"/></span> */}      
       {/* Mobile View Carousel */}
       <div className="md:hidden relative ">
         <div className="flex items-center justify-between mb-4">
@@ -45,15 +45,21 @@ const VideoMobileSlider:React.FC = () => {
             <div className="flex transition-transform duration-300 ease-in-out" style={{ transform: `translateX(-${current * 100}%)` }}>
             {videoData.map((video, index) => (
               <div key={index} className="min-w-full px-2">
-              <div className="bg-[#101012] border-[#363535] rounded-3xl shadow-md">
-                <div className="rounded-xl flex items-center justify-center ">
+              <div className="bg-[#101012] border-[#363535] rounded-[12px] sm:rounded-3xl shadow-md px-4 pt-4">
+                <div className="relative rounded-xl flex items-center justify-center ">
                   <div></div>
                   <div className='absolute'>
                     <PlayButton/>
                   </div>
                   <img src={video.imageUrl} alt="" className="h-auto w-full object-contain" />
+                  <div className='absolute top-4 left-4'>
+                    <div className='text-[13px] font-medium'>{video.name}</div>
+                    <div className='text-[10px] text-[#938B8B] font-medium'>{video.title}</div>
+                  </div>
                 </div>
                 {/* <img src="/assets/section4img6.png" alt="" className="h-16 object-contain mb-6" /> */}
+                
+                <div className='text-[#A1A1AA] text-[15px] px-[15px] pt-4 pb-5'>{video.title}</div>
               </div>
             </div>
             ))}

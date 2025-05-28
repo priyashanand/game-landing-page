@@ -3,7 +3,7 @@ import React from 'react'
 const ItsTime:React.FC = () => {
   return (
     <div className='px-[22px] sm:px-[104px] pt-[72px] sm:pt-[151px] pb-[72px] sm:pb-[78px]'>
-      <div className='flex flex-col items-center text-center bg-[url("/assets/timebg.png")] bg-cover pt-[36px] sm:pt-[63px] px-[22px] sm:px-[219px] rounded-[16px] sm:rounded-[40px]'>
+      <div className='flex flex-col items-center text-center bg-[url("/assets/timebg1.png")] bg-cover pt-[36px] sm:pt-[63px] px-[22px] sm:px-[219px] rounded-[16px] sm:rounded-[40px]'>
       <h1 className="text-[23px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br from-white to-[#71717A] text-transparent bg-clip-text leading-tight">Its time to get Started! <br />
       Launch Loud. Grow Fast. Stay Legendary.</h1>
       <div className='py-[35px] sm:py-[57px]'>
@@ -21,7 +21,7 @@ const ItsTime:React.FC = () => {
           </svg>
         </button>
       </div>
-      </div>
+      </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
     </div>
   )
 }

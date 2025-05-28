@@ -3,8 +3,8 @@ import React from 'react'
 const Intro: React.FC = () => {
   return (
     <div className='flex flex-col  items-center pt-[63px] sm:pt-[112px]'>
-      <h1 className='text-[24px]  sm:text-[72px]  font-bold sm:leading-[77.04px]  text-white sm:px-[118px] tracking-[-1.8px]'>Precision Crafted Software for </h1>
-      <h1 className='text-[24px]  sm:text-[72px]  font-bold  sm:leading-[77.04px] text-white tracking-[-1.8px]'>Pixel-Perfect Precision</h1>
+      <h1 className='text-[24px]  sm:text-[72px]  font-bold sm:leading-[77.04px]  text-white sm:px-[118px] tracking-[-1.2px] sm:tracking-[-1.8px]'>Precision Crafted Software for </h1>
+      <h1 className='text-[24px]  sm:text-[72px]  font-bold  sm:leading-[77.04px] text-white tracking-[-1.2px] sm:tracking-[-1.8px]'>Pixel-Perfect Precision</h1>
       <div className='hidden sm:block text-[#A1A1AA] font-medium text-[20px] pt-9'>Whether you're crafting a battle royale beast or an indie story-driven gem, we  </div>
       <p className='hidden sm:block text-[#A1A1AA] font-medium text-[20px] pb-[52px] '>build game interfaces, characters, and systems that captivate — and convert.</p>
 

@@ -8,7 +8,8 @@ const Character:React.FC = () => {
         <p className="text-zinc-400 text-center sm:text-start text-[13px] sm:text-[24px] pt-[24px] sm:pt-[36px]">Every great game starts with unforgettable characters. Our designers shape personalities, not just avatars — blending lore, emotion, and stunning visuals to breathe life into your heroes and villains. 
         <span className='font-bold text-white text-[13px] sm:text-[24px]'>“ From concept sketches to in-game animations — your next fan-favorite starts here ”</span></p>
       </div>
-      <img src="/assets/character.png" alt="" className='sm:w-[45%]'/>
+      <img src="/assets/mobchar.png" alt="" className="sm:hidden sm:w-[45%]"/>
+      <img src="/assets/character.png" alt="" className='hidden sm:block sm:w-[45%]'/>
     </div>
   )
 }

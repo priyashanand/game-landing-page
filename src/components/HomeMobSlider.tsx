@@ -12,19 +12,19 @@ const cards = [
   },
   {
     imgMain: "/assets/cardimg8.png",
-    desc: "Revolving Games team needed a bold new identity and a cleaner dashboard to improve player engagement and retention. Brand refresh + dashboard overhaul = smoother play and high....",
-    url: "/csp/netsol"
-
-  },
-  {
-    imgMain: "/assets/cardimg9.png",
-    desc: "Revolving Games team needed a bold new identity and a cleaner dashboard to improve player engagement and retention. Brand refresh + dashboard overhaul = smoother play and high....",
+    desc: "Metaedge team needed a bold new identity and a cleaner dashboard to improve player engagement and retention. Brand refresh + dashboard overhaul = smoother play and high....",
     url: "/csp/metaende"
 
   },
   {
+    imgMain: "/assets/cardimg9.png",
+    desc: "A world-class automotive giant needed a private ride-hailing solution that maximized the ROI of unused luxury vehicles while delivering a seamless, secure experience for their executives.....",
+    url: "/csp/netsol"
+
+  },
+  {
     imgMain: "/assets/cardimg10.png",
-    desc: "Revolving Games team needed a bold new identity and a cleaner dashboard to improve player engagement and retention. Brand refresh + dashboard overhaul = smoother play and high....",
+    desc: "Cerwin Vega, a legacy name in high-performance audio systems, approached us at Clyde to modernize their digital presence. Their previous website, though functional, no longer.......",
     url: "/csp/cerwinvega"
 
   }
@@ -44,7 +44,7 @@ const HomeMobSlider:React.FC = () => {
 
       {/* Mobile View Carousel */}
       <div className="md:hidden relative ">
-        <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center justify-between mb-[30px]">
           
           <div className="flex-1 overflow-hidden">
             <div className="flex transition-transform duration-300 ease-in-out" style={{ transform: `translateX(-${current * 100}%)` }}>
