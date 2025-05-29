@@ -1,5 +1,6 @@
 import React from 'react';
 import CallToActionCard from './CallToActionCard';
+import { Link } from 'react-router-dom';
 
 const Ideas: React.FC = () => {
   return (
@@ -16,26 +17,31 @@ const Ideas: React.FC = () => {
         </div>
 
         {/* Buttons */}
+
         <div className="flex items-center gap-6">
           {/* Contact Us button with arrow */}
-          <button className="hidden sm:inline-flex items-center gap-2 bg-white text-black text-sm font-medium py-2.5 px-6 rounded-lg hover:bg-gray-200 transition">
-            Contact Us
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.8}
-              stroke="currentColor"
-              className="w-4 h-4"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-            </svg>
-          </button>
+          <Link to="/contact">
+            <button className="hidden sm:inline-flex items-center gap-2 bg-white text-black text-sm font-medium py-2.5 px-6 rounded-lg hover:bg-gray-200 transition">
+              Contact Us
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.8}
+                stroke="currentColor"
+                className="w-4 h-4"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+              </svg>
+            </button>
+          </Link>
 
           {/* Explore About Us button */}
-          <button className="text-[#6A6A6A] sm:text-white text-sm border py-1 sm:py-0 px-4 sm:px-0 border-[#171616] sm:border-none font-medium hover:text-gray-300 transition">
-            Explore About Us
-          </button>
+          <Link to="/casestudies">
+            <button className="text-[#6A6A6A] sm:text-white text-sm border py-1 sm:py-0 px-4 sm:px-0 border-[#171616] sm:border-none font-medium hover:text-gray-300 transition">
+              Explore About Us
+            </button>
+          </Link>
         </div>
       </div>
       <div className='sm:hidden px-[22px]'>

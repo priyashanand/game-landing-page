@@ -1,5 +1,4 @@
 import React from "react";
-import SocialLinks from "./SocialLinks";
 
 interface ContactInfoProps {
   email: string;
@@ -40,12 +39,7 @@ const ContactInfo: React.FC<ContactInfoProps> = ({ email, location }) => {
           <p className="font-normal mt-2.5 text-[#E1DEDE] sm:text-[rgba(77,77,77,1)]">{location}</p>
         </div>
       </div>
-      <div className="pt-[32px] sm:pt-0">
-        <div className="sm:hidden text-[16px] text-[#757575] pb-[14px]">
-          Follow us on
-        </div>
-        <SocialLinks/>
-      </div>
+
     </div>
   );
 };
