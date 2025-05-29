@@ -28,7 +28,7 @@ function AppContent() {
           <Route path="/casestudies" element={<CaseStudies />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/csp/:casename" element={<CaseStudyPage />} />
-          <Route path="/revgames" element={<RevolvingGames />} />
+          <Route path="/csp/revolvingGames" element={<RevolvingGames />} />
         </Routes>
 
         {/* Footer only if not on contact page */}
