@@ -14,7 +14,7 @@ const IntroSlider: React.FC = () => {
   const allSlides = [...caseStudies, ...caseStudies];
 
   return (
-    <div className="overflow-hidden w-full py-10">
+    <div className="sm:hidden overflow-hidden w-full py-10">
       <div className="flex w-max gap-[18px] animate-slide">
         {allSlides.map((item, index) => (
           <SliderCaseIntroCard key={index} imageUrl={item.imageUrl} />
