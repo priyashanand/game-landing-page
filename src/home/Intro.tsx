@@ -25,7 +25,7 @@ const Intro: React.FC = () => {
         </div>
       </Link>
       <h1></h1>
-      <img src="/assets/homeIntro.png" alt="" className='px-[14px] sm:px-[81px] pt-[33px] sm:pt-[64px]'/>
+      <img src="/assets/homeIntro.png" alt="Game app design" className='px-[14px] sm:px-[81px] pt-[33px] sm:pt-[64px]'/>
     </div>
   ) 
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import IntroSlider from './IntroSlider'
 import { Link } from 'react-router-dom'
+import MobIntroSlider from './MobIntroSlider'
 
 const Intro: React.FC = () => {
   return (
@@ -26,6 +27,7 @@ const Intro: React.FC = () => {
       </Link>
       <h1></h1>
       <IntroSlider/>
+      <MobIntroSlider/>
     </div>
   ) 
 }

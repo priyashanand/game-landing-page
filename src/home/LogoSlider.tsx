@@ -23,7 +23,7 @@ const LogoSlider: React.FC<LogoSliderProps> = ({ logoUrls }) => {
           <img
             key={index}
             src={url}
-            alt={`Logo ${index}`}
+            alt={`Partner Logo ${index}`}
             className={`shrink-0 ${logoStyles[index % logoStyles.length]}`}
           />
         ))}

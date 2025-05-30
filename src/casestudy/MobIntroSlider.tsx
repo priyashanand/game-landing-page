@@ -1,5 +1,5 @@
 import React from 'react';
-import SliderCaseIntroCard from '../components/SliderCaseIntroCard';
+import SliderCaseIntroCard from '../components/MobSliderCaseIntroCard';
 
 const caseStudies = [
   { imageUrl: '/assets/csimg1.png' },
@@ -14,8 +14,8 @@ const IntroSlider: React.FC = () => {
   const allSlides = [...caseStudies, ...caseStudies];
 
   return (
-    <div className="hidden sm:block overflow-hidden w-full py-10">
-      <div className="flex w-max gap-10 animate-slide">
+    <div className="overflow-hidden w-full py-10">
+      <div className="flex w-max gap-[18px] animate-slide">
         {allSlides.map((item, index) => (
           <SliderCaseIntroCard key={index} imageUrl={item.imageUrl} />
         ))}
