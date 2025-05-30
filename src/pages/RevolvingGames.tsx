@@ -45,7 +45,7 @@ const RevolvingGames:React.FC = () => {
   return (
     <div className='pt-[80px]'>
       <div className='text-[20px] text-[#A1A1AA] leading-8 px-[104px] pb-[51px]'>
-        Casestudies {'>'} Revolving Games
+        Casestudies {'>'} <span className='text-[#00C6CC]'>Revolving Games</span>
       </div>
       <div className='flex items-center gap-[122px] px-[104px] pb-[100px]'>
         <div className='flex flex-col gap-[48px]'>
@@ -64,14 +64,21 @@ const RevolvingGames:React.FC = () => {
         <img src="/assets/revimg.png" alt="" className='w-[44.2%]'/>
       </div>
 
+
       {/* Overview */}
-      <div className='px-[104px] pt-[60px] pb-[70px] border-t border-[#161515]'>
+      <div className='px-[104px]'>
+      <div className='px-[104px] h-[1px] w-full bg-[#161515]'></div>
+      </div>
+      <div className='px-[104px] pt-[60px] pb-[70px] '>
         <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[40px]'>Overview</h1>
         <p className='text-[22px] text-[#BEBEBE] font-medium leading-8'>A next-gen game needed a frictionless, in-game purchase experience that worked seamlessly across fiat (Stripe) and crypto (USDT) — without pulling players out of the gameplay. Clyde was brought in to design and build a secure, responsive web purchase flow integrated with their game server.</p>
       </div>
 
       {/* How did we build Revolving Games? */}
-      <div className='pt-[80px] pb-[70px] border-t border-[#161515]'>
+      <div className='px-[104px]'>
+      <div className='px-[104px] h-[1px] w-full bg-[#161515]'></div>
+      </div>
+      <div className='pt-[80px] pb-[70px]  '>
         <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[40px] px-[104px]'>How did we build Revolving Games?</h1>
         <p className='px-[104px] pb-[70px] text-[#A1A1AA] text-[22px] '>Building a revolving game requires smart design, real-time tech, and seamless monetization. Here are the four key steps:</p>
         <div className=' bg-[url("/assets/curvbg1.png")] bg-cover '>
@@ -99,14 +106,20 @@ const RevolvingGames:React.FC = () => {
 
 
       {/* Challenges */}
-      <div className='px-[104px] pt-[60px] pb-[70px] border-t border-[#161515]'>
+      <div className='px-[104px]'>
+      <div className='px-[104px] h-[1px] w-full bg-[#161515]'></div>
+      </div>
+      <div className='px-[104px] pt-[60px] pb-[70px]'>
         <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[40px]'>Challenges</h1>
         <p className='text-[22px] text-[#A1A1AA] leading-8'>The client needed a seamless, mobile-optimized purchase system supporting both fiat and crypto payments without disrupting gameplay. It required real-time backend synchronization, secure authentication and payment verification, plus reliable fallback handling for failed crypto transactions—ensuring a smooth and secure user experience.</p>
       </div>
 
 
       {/* Tech Stack */}
-      <div className='px-[104px] pt-[60px] border-t border-[#161515]'>
+      <div className='px-[104px]'>
+      <div className='px-[104px] h-[1px] w-full bg-[#161515]'></div>
+      </div>
+      <div className='px-[104px] pt-[60px]'>
         <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[40px]'>Tech Stack</h1>
         <div className='flex flex-col gap-[35px]'>
           <div className='flex gap-[34px]'>
@@ -183,17 +196,20 @@ const RevolvingGames:React.FC = () => {
       
 
       {/* Tracking Performance and Measuring Results */}
-      <div className='px-[104px] pt-[70px] border-t border-[#161515]'>
+      <div className='px-[104px]'>
+      <div className='px-[104px] h-[1px] w-full bg-[#161515]'></div>
+      </div>
+      <div className='px-[104px] pt-[70px] '>
         <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[40px]'>Tracking Performance and Measuring Results</h1>
         <div className='flex gap-[80px]'>
-          <img src="/assets/tracking.png" alt="" className='w-[72.6%]'/>
-          <div className='flex flex-col w-[32.4%] gap-[25px]'>
+          <img src="/assets/tracking.png" alt="" className='w-[69.6%]'/>
+          <div className='flex flex-col w-[35.4%] gap-[25px]'>
             <div style={{background: 'linear-gradient(180deg, rgba(0, 142, 153, 0.26) 0%, rgba(255, 255, 255, 0.00) 100%)'}} className='flex flex-col items-center gap-[8px] h-1/2 justify-center  rounded-2xl'>
-              <h1 className='text-[105px] text-white font-semibold text-center'>70%</h1>
+              <h1 className='text-[40px] text-white font-semibold text-center'>70%</h1>
               <p  className='text-[#B5B2B2] text-[16px] '>Increase in player retention</p>
             </div>
             <div style={{background: 'linear-gradient(180deg, rgba(0, 142, 153, 0.26) 0%, rgba(255, 255, 255, 0.00) 100%)'}} className='flex flex-col items-center gap-[8px] h-1/2 justify-center  rounded-2xl'>
-              <h1 className='text-[105px] font-semibold text-white text-center'>3x</h1>
+              <h1 className='text-[40px] font-semibold text-white text-center'>3x</h1>
               <p  className='text-[#B5B2B2] text-[16px] '>Longer average play sessions</p>
             </div>
           </div>
