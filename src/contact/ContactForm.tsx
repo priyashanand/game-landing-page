@@ -107,17 +107,17 @@ const ContactForm: React.FC = () => {
             to="/contact"
             className="relative z-10 w-[228px] h-[28px] rounded-lg flex items-center justify-center text-[#A1A1AA] text-[14px] font-medium leading-[24px]"
           >
-            Contact Us
+            Send Message
           </Link>
         </button>
       </div>
       <div className="sm:hidden pt-[40px]">
         <button type="submit" className="relative group py-4">
           <div className="absolute w-[113px] h-[34px] top-[1px] left-[1px] bg-[#09090B] rounded-lg shadow-[0_0_0_1px_rgba(255,255,255,0.1)]" />
-          <span className="absolute w-[113px] h-[1px] left-[3px] top-[33px] rounded bg-gradient-to-r from-cyan-400/0 via-cyan-400/90 to-cyan-400/0" />
+          <span className="absolute w-[113px] h-[1px] left-[3px] top-[35px] rounded bg-gradient-to-r from-cyan-400/0 via-cyan-400/90 to-cyan-400/0" />
           <Link
             to="/contact"
-            className="relative z-10 w-[113px] h-[34px] rounded-lg -top-3.5 flex items-center justify-center text-[#A1A1AA] text-[8px] font-medium sm:leading-[24px]"
+            className="relative z-10 w-[113px] h-[34px] rounded-lg -top-3.5 flex items-center justify-center text-[#A1A1AA] text-[10px] font-medium sm:leading-[24px]"
           >
             Send Message
           </Link>

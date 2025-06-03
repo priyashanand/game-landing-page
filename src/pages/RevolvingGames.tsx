@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import MobRevolving from '../components/MobRevolving';
 
 const CustomIcon = ({ width = 28, height = 29, fill = '#38E8EE', ...props }) => (
   <svg
@@ -43,203 +44,208 @@ const Quotes = () =>(
 
 const RevolvingGames:React.FC = () => {
   return (
-    <div className='pt-[80px]'>
-      <div className='text-[20px] text-[#A1A1AA] leading-8 px-[104px] pb-[51px]'>
-        Casestudies {'>'} <span className='text-[#00C6CC]'>Revolving Games</span>
-      </div>
-      <div className='flex items-center gap-[122px] px-[104px] pb-[100px]'>
-        <div className='flex flex-col gap-[48px]'>
-          <h1 className='text-white text-[44px] leading-[54px] tracking-[-1.2px] font-bold'>Building a seamless Web2 + Web3 Purchases for a AAA Game</h1>
-          <p className='text-[22px] text-[#959595] leading-8'>Clyde built a secure, responsive checkout embedded in the game server, allowing players to pay instantly with Stripe or USDT without ever leaving gameplay.</p>
-          <div className='flex'>
-            <img src="/assets/avatargroup.png" alt="" className='h-[46px] pr-5'/>
-            <div className='flex items-center'>
-              <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
-              <circle cx="4.16992" cy="4.16992" r="4.16992" fill="white"/>
-              </svg>
-              <p className='text-white pl-2 font-medium'>400k users</p>
-            </div>
-          </div>
+    <div>
+      <div className='hidden sm:block pt-[80px]'>
+        <div className='text-[20px] text-[#A1A1AA] leading-8 px-[104px] pb-[51px]'>
+          Casestudies {'>'} <span className='text-[#00C6CC]'>Revolving Games</span>
         </div>
-        <img src="/assets/revimg.png" alt="" className='w-[44.2%]'/>
-      </div>
-
-
-      {/* Overview */}
-      <div className='px-[104px]'>
-      <div className='px-[104px] h-[1px] w-full bg-[#161515]'></div>
-      </div>
-      <div className='px-[104px] pt-[60px] pb-[70px] '>
-        <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[40px]'>Overview</h1>
-        <p className='text-[22px] text-[#BEBEBE] font-medium leading-8'>A next-gen game needed a frictionless, in-game purchase experience that worked seamlessly across fiat (Stripe) and crypto (USDT) — without pulling players out of the gameplay. Clyde was brought in to design and build a secure, responsive web purchase flow integrated with their game server.</p>
-      </div>
-
-      {/* How did we build Revolving Games? */}
-      <div className='px-[104px]'>
-      <div className='px-[104px] h-[1px] w-full bg-[#161515]'></div>
-      </div>
-      <div className='pt-[80px] pb-[70px]  '>
-        <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[40px] px-[104px]'>How did we build Revolving Games?</h1>
-        <p className='px-[104px] pb-[70px] text-[#A1A1AA] text-[22px] '>Building a revolving game requires smart design, real-time tech, and seamless monetization. Here are the four key steps:</p>
-        <div className=' bg-[url("/assets/curvbg1.png")] bg-cover '>
-        <div className='flex justify-between px-[147px] gap-[167px]'>
-          <div>
-            <img src="/assets/1.png" alt="" className=''/>
-            <p className='text-center text-[24px] text-white pt-10'>Core Gameplay <br /> Development</p>
-          </div>
-          <div>
-            <img src="/assets/2.png" alt="" className=''/>
-            <p className='text-center text-[24px] text-white pt-10'>Backend & Live <br />Server Integration</p>
-          </div>
-          <div>
-            <img src="/assets/3.png" alt="" className=''/>
-            <p className='text-center text-[24px] text-white pt-10'>Monetization & <br />Purchase Flow</p>
-          </div>
-          <div>
-            <img src="/assets/4.png" alt="" className=''/>
-            <p className='text-center text-[24px] text-white pt-10'>Live Operations & <br />Content Updates</p>
-          </div>
-        </div>
-          
-        </div>
-      </div>
-
-
-      {/* Challenges */}
-      <div className='px-[104px]'>
-      <div className='px-[104px] h-[1px] w-full bg-[#161515]'></div>
-      </div>
-      <div className='px-[104px] pt-[60px] pb-[70px]'>
-        <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[40px]'>Challenges</h1>
-        <p className='text-[22px] text-[#A1A1AA] leading-8'>The client needed a seamless, mobile-optimized purchase system supporting both fiat and crypto payments without disrupting gameplay. It required real-time backend synchronization, secure authentication and payment verification, plus reliable fallback handling for failed crypto transactions—ensuring a smooth and secure user experience.</p>
-      </div>
-
-
-      {/* Tech Stack */}
-      <div className='px-[104px]'>
-      <div className='px-[104px] h-[1px] w-full bg-[#161515]'></div>
-      </div>
-      <div className='px-[104px] pt-[60px]'>
-        <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[40px]'>Tech Stack</h1>
-        <div className='flex flex-col gap-[35px]'>
-          <div className='flex gap-[34px]'>
-            <div className='flex items-center w-1/2 pl-[28px] py-[31px] border border-[#212121] rounded-[24px]'>
-              <div className='p-[15px] bg-[#EBEBEB0D] rounded-xl'>
-                <CustomIcon/>
+        <div className='flex items-center gap-[122px] px-[104px] pb-[100px]'>
+          <div className='flex flex-col gap-[48px]'>
+            <h1 className='text-white text-[44px] leading-[54px] tracking-[-1.2px] font-bold'>Building a seamless Web2 + Web3 Purchases for a AAA Game</h1>
+            <p className='text-[22px] text-[#959595] leading-8'>Clyde built a secure, responsive checkout embedded in the game server, allowing players to pay instantly with Stripe or USDT without ever leaving gameplay.</p>
+            <div className='flex'>
+              <img src="/assets/avatargroup.png" alt="" className='h-[46px] pr-5'/>
+              <div className='flex items-center'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+                <circle cx="4.16992" cy="4.16992" r="4.16992" fill="white"/>
+                </svg>
+                <p className='text-white pl-2 font-medium'>400k users</p>
               </div>
-              <p className='text-[22px] leading-7 text-[#EFEFEF] pl-[43px]'><span className='text-[#939393]'>Frontend:</span>React.js (S3 Hosted)</p>
             </div>
-            <div className='flex items-center w-1/2 pl-[28px] py-[31px] border border-[#212121] rounded-[24px]'>
-              <div className='p-[15px] bg-[#EBEBEB0D] rounded-xl'>
-                <CustomIcon/>
+          </div>
+          <img src="/assets/revimg.png" alt="" className='w-[44.2%]'/>
+        </div>
+
+
+        {/* Overview */}
+        <div className='px-[104px]'>
+        <div className='px-[104px] h-[1px] w-full bg-[#161515]'></div>
+        </div>
+        <div className='px-[104px] pt-[60px] pb-[70px] '>
+          <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[40px]'>Overview</h1>
+          <p className='text-[22px] text-[#BEBEBE] font-medium leading-8'>A next-gen game needed a frictionless, in-game purchase experience that worked seamlessly across fiat (Stripe) and crypto (USDT) — without pulling players out of the gameplay. Clyde was brought in to design and build a secure, responsive web purchase flow integrated with their game server.</p>
+        </div>
+
+        {/* How did we build Revolving Games? */}
+        <div className='px-[104px]'>
+        <div className='px-[104px] h-[1px] w-full bg-[#161515]'></div>
+        </div>
+        <div className='pt-[80px] pb-[70px]  '>
+          <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[40px] px-[104px]'>How did we build Revolving Games?</h1>
+          <p className='px-[104px] pb-[70px] text-[#A1A1AA] text-[22px] '>Building a revolving game requires smart design, real-time tech, and seamless monetization. Here are the four key steps:</p>
+          <div className=' bg-[url("/assets/curvbg1.png")] bg-cover '>
+          <div className='flex justify-between px-[147px] gap-[167px]'>
+            <div>
+              <img src="/assets/1.png" alt="" className=''/>
+              <p className='text-center text-[24px] text-white pt-10'>Core Gameplay <br /> Development</p>
+            </div>
+            <div>
+              <img src="/assets/2.png" alt="" className=''/>
+              <p className='text-center text-[24px] text-white pt-10'>Backend & Live <br />Server Integration</p>
+            </div>
+            <div>
+              <img src="/assets/3.png" alt="" className=''/>
+              <p className='text-center text-[24px] text-white pt-10'>Monetization & <br />Purchase Flow</p>
+            </div>
+            <div>
+              <img src="/assets/4.png" alt="" className=''/>
+              <p className='text-center text-[24px] text-white pt-10'>Live Operations & <br />Content Updates</p>
+            </div>
+          </div>
+            
+          </div>
+        </div>
+
+
+        {/* Challenges */}
+        <div className='px-[104px]'>
+        <div className='px-[104px] h-[1px] w-full bg-[#161515]'></div>
+        </div>
+        <div className='px-[104px] pt-[60px] pb-[70px]'>
+          <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[40px]'>Challenges</h1>
+          <p className='text-[22px] text-[#A1A1AA] leading-8'>The client needed a seamless, mobile-optimized purchase system supporting both fiat and crypto payments without disrupting gameplay. It required real-time backend synchronization, secure authentication and payment verification, plus reliable fallback handling for failed crypto transactions—ensuring a smooth and secure user experience.</p>
+        </div>
+
+
+        {/* Tech Stack */}
+        <div className='px-[104px]'>
+        <div className='px-[104px] h-[1px] w-full bg-[#161515]'></div>
+        </div>
+        <div className='px-[104px] pt-[60px]'>
+          <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[40px]'>Tech Stack</h1>
+          <div className='flex flex-col gap-[35px]'>
+            <div className='flex gap-[34px]'>
+              <div className='flex items-center w-1/2 pl-[28px] py-[31px] border border-[#212121] rounded-[24px]'>
+                <div className='p-[15px] bg-[#EBEBEB0D] rounded-xl'>
+                  <CustomIcon/>
+                </div>
+                <p className='text-[22px] leading-7 text-[#EFEFEF] pl-[43px]'><span className='text-[#939393]'>Frontend:</span>React.js (S3 Hosted)</p>
               </div>
-              <p className='text-[22px] leading-7 text-[#EFEFEF] pl-[43px]'><span className='text-[#939393]'>Backend:</span>Express.js on EC2, PostgreSQL (RDS)</p>
-            </div>
-          </div>
-          <div className='flex gap-[34px]'>
-            <div className='flex items-center w-1/2 pl-[28px] py-[31px] border border-[#212121] rounded-[24px]'>
-              <div className='p-[15px] bg-[#EBEBEB0D] rounded-xl'>
-                <CustomIcon/>
+              <div className='flex items-center w-1/2 pl-[28px] py-[31px] border border-[#212121] rounded-[24px]'>
+                <div className='p-[15px] bg-[#EBEBEB0D] rounded-xl'>
+                  <CustomIcon/>
+                </div>
+                <p className='text-[22px] leading-7 text-[#EFEFEF] pl-[43px]'><span className='text-[#939393]'>Backend:</span>Express.js on EC2, PostgreSQL (RDS)</p>
               </div>
-              <p className='text-[22px] leading-7 text-[#EFEFEF] pl-[43px]'><span className='text-[#939393]'>Payments:</span>Stripe (fiat), USDT on-chain (crypto)</p>
             </div>
-            <div className='flex items-center w-1/2 pl-[28px] py-[31px] border border-[#212121] rounded-[24px]'>
-              <div className='p-[15px] bg-[#EBEBEB0D] rounded-xl'>
-                <CustomIcon/>
+            <div className='flex gap-[34px]'>
+              <div className='flex items-center w-1/2 pl-[28px] py-[31px] border border-[#212121] rounded-[24px]'>
+                <div className='p-[15px] bg-[#EBEBEB0D] rounded-xl'>
+                  <CustomIcon/>
+                </div>
+                <p className='text-[22px] leading-7 text-[#EFEFEF] pl-[43px]'><span className='text-[#939393]'>Payments:</span>Stripe (fiat), USDT on-chain (crypto)</p>
               </div>
-              <p className='text-[22px] leading-7 text-[#EFEFEF] pl-[43px]'><span className='text-[#939393]'>Security:</span>JWT login, webhook validation</p>
+              <div className='flex items-center w-1/2 pl-[28px] py-[31px] border border-[#212121] rounded-[24px]'>
+                <div className='p-[15px] bg-[#EBEBEB0D] rounded-xl'>
+                  <CustomIcon/>
+                </div>
+                <p className='text-[22px] leading-7 text-[#EFEFEF] pl-[43px]'><span className='text-[#939393]'>Security:</span>JWT login, webhook validation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* images */}
+        <div className='px-[104px] pt-[110px] flex flex-col gap-[46px]'>
+          <div className='flex gap-[50px]'>
+            <img src="/assets/revimg1.png" alt="" className='w-[54.45%] h-auto'/>
+            <img src="/assets/revimg2.png" alt="" className='w-[41.75%]'/>
+          </div>
+          <img src="/assets/revimg3.png" alt="" />
+        </div>
+
+
+        {/* What we deliver */}
+        <div className='px-[104px] pt-[150px] pb-[80px]'>
+          <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[59px]'>What We Delivered</h1>
+          <div className='flex gap-[52px]'>
+            <div className='flex flex-col justify-between w-1/2'>
+              <div className='flex items-center py-[21px] px-[21px] bg-[#121315] border border-[#171717] rounded-lg'>
+                <Plusicon/>
+                <p className='text-[18px] text-white leading-[30px] pl-[12px]'>Boosted purchase conversion rates</p>
+              </div>
+              <div className='flex items-center py-[21px] px-[21px] bg-[#121315] border border-[#171717] rounded-lg'>
+                <Plusicon/>
+                <p className='text-[18px] text-white leading-[30px] pl-[12px]'>Improved User retention</p>
+              </div>
+              <div className='flex items-center py-[21px] px-[21px] bg-[#121315] border border-[#171717] rounded-lg'>
+                <Plusicon/>
+                <p className='text-[18px] text-white leading-[30px] pl-[12px]'>Reduced drop-offs across payment flows</p>
+              </div>
+              <div className='flex items-center py-[21px] px-[21px] bg-[#121315] border border-[#171717] rounded-lg'>
+                <Plusicon/>
+                <p className='text-[18px] text-white leading-[30px] pl-[12px]'>Boosted purchase conversion rates</p>
+              </div>
+              <div className='flex items-center py-[21px] px-[21px] bg-[#121315] border border-[#171717] rounded-lg'>
+                <Plusicon/>
+                <p className='text-[18px] text-white leading-[30px] pl-[12px]'>Boosted purchase conversion rates</p>
+              </div>
+            </div>
+
+            <img src="/assets/deliver.png" alt="" className='w-1/2'/>
+          </div>
+        </div>
+        
+
+        {/* Tracking Performance and Measuring Results */}
+        <div className='px-[104px]'>
+        <div className='px-[104px] h-[1px] w-full bg-[#161515]'></div>
+        </div>
+        <div className='px-[104px] pt-[70px] '>
+          <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[40px]'>Tracking Performance and Measuring Results</h1>
+          <div className='flex gap-[80px]'>
+            <img src="/assets/tracking.png" alt="" className='w-[69.6%]'/>
+            <div className='flex flex-col w-[35.4%] gap-[25px]'>
+              <div style={{background: 'linear-gradient(180deg, rgba(0, 142, 153, 0.26) 0%, rgba(255, 255, 255, 0.00) 100%)'}} className='flex flex-col items-center gap-[8px] h-1/2 justify-center  rounded-2xl'>
+                <h1 className='text-[40px] text-white font-semibold text-center'>70%</h1>
+                <p  className='text-[#B5B2B2] text-[16px] '>Increase in player retention</p>
+              </div>
+              <div style={{background: 'linear-gradient(180deg, rgba(0, 142, 153, 0.26) 0%, rgba(255, 255, 255, 0.00) 100%)'}} className='flex flex-col items-center gap-[8px] h-1/2 justify-center  rounded-2xl'>
+                <h1 className='text-[40px] font-semibold text-white text-center'>3x</h1>
+                <p  className='text-[#B5B2B2] text-[16px] '>Longer average play sessions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Founder */}
+        <div className='px-[104px] pt-[84px]'>
+          <div className='flex pl-[60px] pr-[79px] py-[53px] gap-[70px] bg-[#111215] rounded-[28px]'>
+            <div className='flex flex-col items-center w-[660px]  '>
+              <img src="/assets/revfounder.png" alt="" className='h-[102px] w-[102px]' />
+              <h1 className='text-[20px] text-[#FFFCF6] pt-[26px] text-center font-semibold'>Nick Chadda</h1>
+              <p className='text-[#84A5AA] text-[15px] leading-[24px] text-center'>Co-Founder @ Revolving Games</p>
+            </div>
+            <div className='flex flex-col justify-between'>
+              <Quotes/>
+              <p className='text-[20px] text-[#DFDFDF] '>Clyde nailed it. The new web purchase flow is seamless, secure, and perfectly integrated with our gameplay. <span className='text-[#32B9C4] font-medium'>Huge boost in conversions, and way fewer support issues.</span> We finally have a web experience that matches the quality of our games.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Ready to build */}
+        <div className='px-[104px] pt-[80px] pb-[68px]'>
+          <div className='bg-[url("/assets/bg5.png")] bg-cover bg-left-bottom flex flex-col items-center rounded-[32px]'>
+            <h1 className='text-[48px] text-[#A0C2FF] font-semibold text-center pt-[98px]'>Ready to build a modern hybrid <br />payment flow for your game?</h1>
+            <div className='pt-[43px] pb-[163px]'>
+            <Link to="/contact">
+            <button className='text-[16px] text-white bg-[#008E99] rounded-xl px-[20px] py-[12px]'>Contact Us</button></Link>
             </div>
           </div>
         </div>
       </div>
-
-      {/* images */}
-      <div className='px-[104px] pt-[110px] flex flex-col gap-[46px]'>
-        <div className='flex gap-[50px]'>
-          <img src="/assets/revimg1.png" alt="" className='w-[54.45%] h-auto'/>
-          <img src="/assets/revimg2.png" alt="" className='w-[41.75%]'/>
-        </div>
-        <img src="/assets/revimg3.png" alt="" />
-      </div>
-
-
-      {/* What we deliver */}
-      <div className='px-[104px] pt-[150px] pb-[80px]'>
-        <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[59px]'>What We Delivered</h1>
-        <div className='flex gap-[52px]'>
-          <div className='flex flex-col justify-between w-1/2'>
-            <div className='flex items-center py-[21px] px-[21px] bg-[#121315] border border-[#171717] rounded-lg'>
-              <Plusicon/>
-              <p className='text-[18px] text-white leading-[30px] pl-[12px]'>Boosted purchase conversion rates</p>
-            </div>
-            <div className='flex items-center py-[21px] px-[21px] bg-[#121315] border border-[#171717] rounded-lg'>
-              <Plusicon/>
-              <p className='text-[18px] text-white leading-[30px] pl-[12px]'>Improved User retention</p>
-            </div>
-            <div className='flex items-center py-[21px] px-[21px] bg-[#121315] border border-[#171717] rounded-lg'>
-              <Plusicon/>
-              <p className='text-[18px] text-white leading-[30px] pl-[12px]'>Reduced drop-offs across payment flows</p>
-            </div>
-            <div className='flex items-center py-[21px] px-[21px] bg-[#121315] border border-[#171717] rounded-lg'>
-              <Plusicon/>
-              <p className='text-[18px] text-white leading-[30px] pl-[12px]'>Boosted purchase conversion rates</p>
-            </div>
-            <div className='flex items-center py-[21px] px-[21px] bg-[#121315] border border-[#171717] rounded-lg'>
-              <Plusicon/>
-              <p className='text-[18px] text-white leading-[30px] pl-[12px]'>Boosted purchase conversion rates</p>
-            </div>
-          </div>
-
-          <img src="/assets/deliver.png" alt="" className='w-1/2'/>
-        </div>
-      </div>
-      
-
-      {/* Tracking Performance and Measuring Results */}
-      <div className='px-[104px]'>
-      <div className='px-[104px] h-[1px] w-full bg-[#161515]'></div>
-      </div>
-      <div className='px-[104px] pt-[70px] '>
-        <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[40px]'>Tracking Performance and Measuring Results</h1>
-        <div className='flex gap-[80px]'>
-          <img src="/assets/tracking.png" alt="" className='w-[69.6%]'/>
-          <div className='flex flex-col w-[35.4%] gap-[25px]'>
-            <div style={{background: 'linear-gradient(180deg, rgba(0, 142, 153, 0.26) 0%, rgba(255, 255, 255, 0.00) 100%)'}} className='flex flex-col items-center gap-[8px] h-1/2 justify-center  rounded-2xl'>
-              <h1 className='text-[40px] text-white font-semibold text-center'>70%</h1>
-              <p  className='text-[#B5B2B2] text-[16px] '>Increase in player retention</p>
-            </div>
-            <div style={{background: 'linear-gradient(180deg, rgba(0, 142, 153, 0.26) 0%, rgba(255, 255, 255, 0.00) 100%)'}} className='flex flex-col items-center gap-[8px] h-1/2 justify-center  rounded-2xl'>
-              <h1 className='text-[40px] font-semibold text-white text-center'>3x</h1>
-              <p  className='text-[#B5B2B2] text-[16px] '>Longer average play sessions</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Founder */}
-      <div className='px-[104px] pt-[84px]'>
-        <div className='flex pl-[60px] pr-[79px] py-[53px] gap-[70px] bg-[#111215] rounded-[28px]'>
-          <div className='flex flex-col items-center w-[660px]  '>
-            <img src="/assets/revfounder.png" alt="" className='h-[102px] w-[102px]' />
-            <h1 className='text-[20px] text-[#FFFCF6] pt-[26px] text-center font-semibold'>Nick Chadda</h1>
-            <p className='text-[#84A5AA] text-[15px] leading-[24px] text-center'>Co-Founder @ Revolving Games</p>
-          </div>
-          <div className='flex flex-col justify-between'>
-            <Quotes/>
-            <p className='text-[20px] text-[#DFDFDF] '>Clyde nailed it. The new web purchase flow is seamless, secure, and perfectly integrated with our gameplay. <span className='text-[#32B9C4] font-medium'>Huge boost in conversions, and way fewer support issues.</span> We finally have a web experience that matches the quality of our games.</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Ready to build */}
-      <div className='px-[104px] pt-[80px] pb-[68px]'>
-        <div className='bg-[url("/assets/bg5.png")] bg-cover bg-left-bottom flex flex-col items-center rounded-[32px]'>
-          <h1 className='text-[48px] text-[#A0C2FF] font-semibold text-center pt-[98px]'>Ready to build a modern hybrid <br />payment flow for your game?</h1>
-          <div className='pt-[43px] pb-[163px]'>
-          <Link to="/contact">
-          <button className='text-[16px] text-white bg-[#008E99] rounded-xl px-[20px] py-[12px]'>Contact Us</button></Link>
-          </div>
-        </div>
+      <div className='sm:hidden'>
+        <MobRevolving/>
       </div>
     </div>
   )

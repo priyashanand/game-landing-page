@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface ButtonProps {
   children: React.ReactNode;
@@ -41,12 +42,16 @@ const CallToActionCard: React.FC = () => {
         insight. products evolve.ment.
       </p>
       <div className="flex gap-2 justify-center max-sm:w-full">
+        <Link to="/contact">
         <Button variant="primary" className="">
           Contact Us
         </Button>
+        </Link>
+        <Link to="/casestudies">
         <Button variant="secondary" className="">
-          Explore About Us
+          Explore Our Work
         </Button>
+        </Link>
       </div>
     </section>
   );

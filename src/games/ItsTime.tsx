@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ItsTime:React.FC = () => {
   return (
@@ -7,6 +8,7 @@ const ItsTime:React.FC = () => {
       <h1 className="text-[23px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br from-white to-[#71717A] text-transparent bg-clip-text leading-tight">Its time to get Started! <br />
       Launch Loud. Grow Fast. Stay Legendary.</h1>
       <div className='py-[35px] sm:py-[57px]'>
+        <Link to="/contact">
         <button className="inline-flex items-center gap-2 bg-[#FFFFFF]/5 borer text-[#E8E8E8] text-sm font-medium py-2.5 px-5 rounded-[10px] ">
         Get Started
           <svg
@@ -20,6 +22,7 @@ const ItsTime:React.FC = () => {
             <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
           </svg>
         </button>
+        </Link>
       </div>
       </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
     </div>

@@ -56,7 +56,7 @@ const RecentWorks:React.FC = () => {
                    
         </div>        
       </div>
-      <div className=' pt-[38px] sm:pt-[64px]'>
+      {/* <div className=' pt-[38px] sm:pt-[64px]'>
         <div className='flex flex-col sm:flex-row  gap-[38px]'>
           <div className='bg-[#0F0F0F] rounded-[16px] sm:rounded-[36px]'>
             <img src="/assets/work3.png" alt="" />
@@ -102,7 +102,7 @@ const RecentWorks:React.FC = () => {
           </div>
                    
         </div>        
-      </div>
+      </div> */}
     </div>
   )
 }

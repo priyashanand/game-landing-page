@@ -12,24 +12,10 @@ const caseStudies = [
   {
     description:
       'A cutting-edge fintech startup wanted to enhance trust and usability with a clean UI. We streamlined their onboarding and created a visual system that reflects modern finance.',
-    imageUrl: '/assets/cardimg3.png',
+    imageUrl: '/assets/cardimg5.png',
     url:'/csp/netsol'
 
-  },
-  {
-    description:
-      'For an ed-tech client, we built an intuitive dashboard and personalized learning paths. The result: better engagement, reduced churn, and improved outcomes.',
-    imageUrl: '/assets/cardimg4.png',
-    url:'/csp/metaende'
-
-  },
-  {
-    description:
-      'A health and wellness app came to us with low retention. Our redesign simplified navigation and emphasized habit-building, boosting long-term usage metrics.',
-    imageUrl: '/assets/cardimg5.png',
-    url:'/csp/cerwinvega'
-
-  },
+  }
 ];
 
 const Slider: React.FC = () => {
@@ -37,7 +23,7 @@ const Slider: React.FC = () => {
   const allSlides = [...caseStudies, ...caseStudies];
 
   return (
-    <div className=" bg-[#09090B] sm:bg-black pb-14 pt-10 overflow-hidden relative">
+    <div className=" bg-[#09090B] pb-14 pt-10 overflow-hidden relative">
       <div className="flex justify-center sm:justify-start sm:px-[104px] sm:pb-[80px]">
         <div className="text-[23px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br from-white to-[#71717A] text-transparent bg-clip-text leading-tight sm:mb-6">
           Case Studies

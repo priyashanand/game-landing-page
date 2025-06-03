@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import ScrollToTop from './ScrollToTop'; // <- Import here
 import Header from './components/Header';
 import Header1 from './components/Header1';
 import Footer from './components/Footer';
@@ -7,7 +8,8 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Games from './pages/Games';
 import CaseStudyPage from './pages/CaseStudyPage';
-import RevolvingGames from './pages/RevolvingGames'
+import RevolvingGames from './pages/RevolvingGames';
+import Netsol from './pages/Netsol';
 
 function AppContent() {
   const location = useLocation();
@@ -19,7 +21,6 @@ function AppContent() {
   return (
     <div style={{ backgroundColor: '#09090B' }}>
       <div className={`font-inter antialiased text-gray-900 ${shouldApplyStyle ? 'text-white custom-bg-style' : ''}`}>
-        {/* Header logic */}
         {isContactPage ? <Header1 /> : <Header />}
 
         <Routes>
@@ -29,10 +30,10 @@ function AppContent() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/csp/:casename" element={<CaseStudyPage />} />
           <Route path="/csp/revolvingGames" element={<RevolvingGames />} />
+          <Route path="/csp/netsol" element={<Netsol />} />
         </Routes>
 
-        {/* Footer only if not on contact page */}
-        {!isContactPage && <Footer />}
+        <Footer />
       </div>
     </div>
   );
@@ -41,6 +42,7 @@ function AppContent() {
 function App() {
   return (
     <Router>
+      <ScrollToTop /> {/* ✅ Add ScrollToTop here */}
       <AppContent />
     </Router>
   );

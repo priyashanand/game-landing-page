@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Ideas: React.FC = () => {
   return (
-    <div className=" bg-[#09090B] sm:bg-black sm:px-[104px] sm:py-16">
+    <div className=" bg-[#09090B] sm:px-[104px] sm:py-16">
       <div className="hidden sm:flex items-center flex-col sm:flex-row justify-between bg-[#101012] px-[22px] sm:px-[60px] py-[20px] sm:py-[50px] rounded-2xl w-full">
         {/* Text content */}
         <div className="sm:max-w-2xl">
@@ -39,7 +39,7 @@ const Ideas: React.FC = () => {
           {/* Explore About Us button */}
           <Link to="/casestudies">
             <button className="text-[#6A6A6A] sm:text-white text-sm border py-1 sm:py-0 px-4 sm:px-0 border-[#171616] sm:border-none font-medium hover:text-gray-300 transition">
-              Explore About Us
+              Explore our Work
             </button>
           </Link>
         </div>

@@ -12,7 +12,7 @@ function HeroSection() {
   ];
 
   return (
-    <section className="py-14 w-full bg-[#09090B] sm:bg-black">
+    <section className="pt-[127px] pb-14 w-full bg-[#09090B]">
       <div className="px-28 mx-auto  max-md:px-16 max-sm:px-5">
         <div className="flex flex-col sm:flex-row justify-center gap-24 max-md:gap-10 max-sm:gap-8">
           <header className="w-full">

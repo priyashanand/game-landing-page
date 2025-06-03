@@ -12,24 +12,10 @@ const cards = [
     url: "/csp/revolvingGames"
   },
   {
-    imgMain: "/assets/cardimg8.png",
-    desc: "Metaedge team needed a bold new identity and a cleaner dashboard to improve player engagement and retention. Brand refresh + dashboard overhaul = smoother play and high....",
-    bimgurl: '/assets/bimg2.png',
-    url: "/csp/metaende"
-
-  },
-  {
     imgMain: "/assets/cardimg9.png",
     desc: "A world-class automotive giant needed a private ride-hailing solution that maximized the ROI of unused luxury vehicles while delivering a seamless, secure experience for their executives.....",
     bimgurl: '/assets/bimg3.png',
     url: "/csp/netsol"
-
-  },
-  {
-    imgMain: "/assets/cardimg10.png",
-    desc: "Cerwin Vega, a legacy name in high-performance audio systems, approached us at Clyde to modernize their digital presence. Their previous website, though functional, no longer.......",
-    bimgurl: '/assets/bimg4.png',
-    url: "/csp/cerwinvega"
 
   }
 ];

@@ -10,9 +10,15 @@
     color: white;
   }
 
+  .bg-custom {
+    background:  lightgray 0px -0.12px / 100% 134.529% no-repeat,
+                radial-gradient(50% 50% at 50% 50%, rgba(27, 185, 197, 0.17) 0%, rgba(53, 53, 53, 0.17) 100%);
+  }
+
   @media (max-width: 640px) {
     .custom-bg-style {
       background: radial-gradient(40.55% 3.34% at 50% 0%, rgba(94, 176, 239, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
     }
   }
 }
+
