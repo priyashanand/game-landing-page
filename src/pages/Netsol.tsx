@@ -117,7 +117,7 @@ const Netsol:React.FC = () => {
             </div>
           </div>
         </div>
-        <img src="/assets/netsolimg1.png" alt="" className='w-full'/>
+        <img src="/assets/netsolimg1.svg" alt="" className='w-full'/>
       </div>
 
             {/* Overview */}
@@ -210,33 +210,34 @@ const Netsol:React.FC = () => {
         </div>
       </div>
 
+      {/* what we delivered */}
       <div className='px-[104px] pt-[150px] pb-[80px]'>
         <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[59px]'>What We Delivered</h1>
         <div className='flex gap-[52px]'>
-          <div className='flex flex-col justify-between w-1/2'>
-            <div className='flex items-center py-[21px] px-[21px] bg-[#121315] border border-[#8A8A8A] rounded-full'>
+          <div className='flex flex-col justify-center gap-[20px] py-[23px] w-[58%]'>
+            <div className='flex items-center py-[21px] px-[50px] bg-[#121315] border border-[#8A8A8A] rounded-full'>
               <CheckIcon/>
               <p className='text-[24px] text-white leading-[30px] pl-[12px]'>Boosted purchase conversion rates</p>
             </div>
-            <div className='flex items-center py-[21px] px-[21px] bg-[#121315] border border-[#8A8A8A] rounded-full'>
+            <div className='flex items-center py-[21px] px-[50px] bg-[#121315] border border-[#8A8A8A] rounded-full'>
               <CheckIcon/>
               <p className=' text-[24px] text-white leading-[30px] pl-[12px]'>Improved User retention</p>
             </div>
-            <div className='flex items-center py-[21px] px-[21px] bg-[#121315] border border-[#8A8A8A] rounded-full'>
+            <div className='flex items-center py-[21px] px-[50px] bg-[#121315] border border-[#8A8A8A] rounded-full'>
               <CheckIcon/>
               <p className='text-[24px] text-white leading-[30px] pl-[12px]'>Reduced drop-offs across payment flows</p>
             </div>
-            <div className='flex items-center py-[21px] px-[21px] bg-[#121315] border border-[#8A8A8A] rounded-full'>
+            <div className='flex items-center py-[21px] px-[50px] bg-[#121315] border border-[#8A8A8A] rounded-full'>
               <CheckIcon/>
               <p className='text-[24px] text-white leading-[30px] pl-[12px]'>Boosted purchase conversion rates</p>
             </div>
-            <div className='flex items-center py-[21px] px-[21px] bg-[#121315] border border-[#8A8A8A] rounded-full'>
+            <div className='flex items-center py-[21px] px-[50px] bg-[#121315] border border-[#8A8A8A] rounded-full'>
               <CheckIcon/>
               <p className='text-[24px] text-white leading-[30px] pl-[12px]'>Boosted purchase conversion rates</p>
             </div>
           </div>
 
-          <img src="/assets/deliver1.png" alt="" className='w-1/2'/>
+          <img src="/assets/deliver1.png" alt="" className='w-[42%]'/>
         </div>
       </div>
 

@@ -9,6 +9,7 @@ const Header = () => {
 
   const isHome = pathname === '/';
   const isGames = pathname === '/games';
+  const isAbout = pathname === '/about';
   const isCaseStudies = [
     '/casestudies',
     '/csp/revolvingGames',
@@ -34,6 +35,7 @@ const Header = () => {
         <nav className="hidden md:flex gap-[30px] absolute left-1/2 transform -translate-x-1/2 top-[15px]">
           <Link to="/" className={linkClasses(isHome)}>Home</Link>
           <Link to="/games" className={linkClasses(isGames)}>Games</Link>
+          <Link to="/about" className={linkClasses(isAbout)}>About Us</Link>
           <Link to="/casestudies" className={linkClasses(isCaseStudies)}>CaseStudies</Link>
         </nav>
 
@@ -62,6 +64,7 @@ const Header = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden flex flex-col bg-[#111] text-white p-6 space-y-4">
           <Link to="/" className={linkClasses(isHome)} onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+          <Link to="/about" className={linkClasses(isHome)} onClick={() => setIsMobileMenuOpen(false)}>About Us</Link>
           <Link to="/games" className={linkClasses(isGames)} onClick={() => setIsMobileMenuOpen(false)}>Games</Link>
           <Link to="/casestudies" className={linkClasses(isCaseStudies)} onClick={() => setIsMobileMenuOpen(false)}>CaseStudies</Link>
           <Link to="/contact" className="text-[16px] font-medium text-[#A1A1AA]" onClick={() => setIsMobileMenuOpen(false)}>

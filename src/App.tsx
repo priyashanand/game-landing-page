@@ -10,6 +10,7 @@ import Games from './pages/Games';
 import CaseStudyPage from './pages/CaseStudyPage';
 import RevolvingGames from './pages/RevolvingGames';
 import Netsol from './pages/Netsol';
+import About from './pages/About'
 
 function AppContent() {
   const location = useLocation();
@@ -26,6 +27,7 @@ function AppContent() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/games" element={<Games />} />
+          <Route path="/about" element={<About />} />
           <Route path="/casestudies" element={<CaseStudies />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/csp/:casename" element={<CaseStudyPage />} />
