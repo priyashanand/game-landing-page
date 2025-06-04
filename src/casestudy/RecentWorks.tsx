@@ -11,8 +11,8 @@ const RecentWorks:React.FC = () => {
       Our case studies reflect the way we solve real business challenges through clear UX strategy, beautiful UI, and scalable tech. Whether you’re launching something new or refining what already exists, our work speaks for itself.</p>
       <div>
         <div className='flex flex-col sm:flex-row gap-[38px]'>
-          <div className='bg-[#0F0F0F] rounded-[16px] sm:rounded-[36px]'>
-            <img src="/assets/work1.png" alt="" />
+          <div className='bg-[#0F0F0F] rounded-[16px] sm:rounded-[36px] w-1/2'>
+            <img src="/assets/work1.svg" alt="" className='w-full h-auto px-[26px] pt-[26px]'/>
             <p className='text-[16px] sm:text-[32px] text-[#8B8A8A] px-[15px] sm:px-[40px] pt-[28px] sm:p-[40px] '>A full UX revamp that turned casual players into loyal fans</p>
             <div className='px-[15px] sm:px-[40px] pt-[28px] sm:pt-[4px] pb-[24px] sm:pb-[46px]'>
               <Link to="/csp/revolvingGames">
@@ -32,8 +32,8 @@ const RecentWorks:React.FC = () => {
               </Link>
             </div>
           </div>
-          <div className='bg-[#0F0F0F] rounded-[16px] sm:rounded-[36px]'>
-            <img src="/assets/work2.png" alt="" />
+          <div className='bg-[#0F0F0F] rounded-[16px] sm:rounded-[36px] w-1/2'>
+            <img src="/assets/work2.svg" alt="" className='w-full h-auto px-[26px] pt-[26px]'/>
             <p className='text-[16px] sm:text-[32px] text-[#8B8A8A] px-[15px] sm:px-[40px] pt-[28px] sm:p-[40px] '>A Seamless Interface for Smarter, Faster Business Operations</p>
             <div className='px-[15px] sm:px-[40px] pt-[28px] sm:pt-[4px] pb-[24px] sm:pb-[46px]'>
               <Link to="/csp/netsol">
