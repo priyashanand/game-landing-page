@@ -1,6 +1,7 @@
 import React from "react";
 import ContactForm from "./ContactForm";
 import ContactInfo from "./ContactInfo";
+import { Toaster } from "react-hot-toast";
 // import SocialLinks from "./SocialLinks";
 
 const ContactUs: React.FC = () => {
@@ -42,6 +43,7 @@ const ContactUs: React.FC = () => {
               {/* Contact form */}
               <div className=" max-w-full text-base text-[rgba(94,94,94,1)] font-normal leading-[1.2] mt-[60px] max-md:mt-10">
                 <ContactForm />
+                <Toaster/>
               </div>
               
               {/* Contact information and social links */}

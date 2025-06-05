@@ -21,7 +21,7 @@ function AppContent() {
 
   return (
     <div style={{ backgroundColor: '#09090B' }}>
-      <div className={`font-inter antialiased text-gray-900 ${shouldApplyStyle ? 'text-white custom-bg-style' : ''}`}>
+      <div className={`font-inter antialiased text-gray-900 ${shouldApplyStyle ? 'text-white custom-bg-style' : ''} flex flex-col`}>
         {isContactPage ? <Header1 /> : <Header />}
 
         <Routes>

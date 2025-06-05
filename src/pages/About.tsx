@@ -1,16 +1,68 @@
-import React from 'react'
+import React, { useState } from 'react'
 import LogoGrid from "../home/LogoGrid";
-
+import { Plus, Minus } from 'lucide-react';
 import { Link } from 'react-router-dom'
 
+interface ClarityProps {
+  head: string;
+  content: string;
+  isOpen: boolean;
+  onClick: () => void
+}
+
+const logoUrls = [
+  "/assets/section2img1.png",
+  "/assets/section2img2.png",
+  "/assets/section2img3.png",
+  "/assets/section2img4.png",
+  "/assets/section2img5.png",
+];
+
+const clarityData = [
+  {
+    head: 'Game UI/UX & Systems',
+    content: 'From character screens to progression systems, we design game UIs that are intuitive, engaging, and built for play.'
+  },
+  {
+    head: 'Frontend/Backend Development',
+    content: 'From character screens to progression systems, we design game UIs that are intuitive, engaging, and built for play.'
+  },
+  {
+    head: 'Payment Integration',
+    content: 'From character screens to progression systems, we design game UIs that are intuitive, engaging, and built for play.'
+  },
+  {
+    head: 'Ongoing Support',
+    content: 'From character screens to progression systems, we design game UIs that are intuitive, engaging, and built for play.'
+  },
+];
+
+const Clarity:React.FC<ClarityProps> = ({head, content, isOpen, onClick}) =>{
+  return (
+    <div>
+      <div className='flex flex-col gap-[16px] p-[17px] bg-[#151515] rounded-[24px]'>
+        <button onClick={onClick} className='flex w-full justify-between'>
+          <div className='text-[#A3A3A3] text-[22px] leading-[30px]'>{head}</div>
+          <span>{isOpen ? <Minus /> : <Plus />}</span>
+        </button>
+        {isOpen && (
+          <div className=''>
+            <p className='text-[#E5E7EB] text-[16px] leading-[24px] pb-4'>{content}</p>
+            <button className='text-[#00C6CC] text-[16px] border-b'>Explore about us</button>
+          </div>
+        )}
+      </div>
+    </div>
+  )
+}
+
 const About:React.FC = () => {
-  const logoUrls = [
-    "/assets/section2img1.png",
-    "/assets/section2img2.png",
-    "/assets/section2img3.png",
-    "/assets/section2img4.png",
-    "/assets/section2img5.png",
-  ];
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
+
+  const handleToggle = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <div>
       {/* Section1 Intro */}
@@ -36,7 +88,7 @@ const About:React.FC = () => {
           </div>
         </Link>
         <h1></h1>
-        <img src="/assets/aboutIntro.svg" alt="Game app design" className='w-full h-auto px-[14px] sm:px-[81px] pt-[33px] sm:pt-[64px]'/>
+        <img src="/assets/aboutintro.svg" alt="Game app design" className='w-full h-auto px-[14px] sm:px-[81px] pt-[33px] sm:pt-[64px]'/>
       </div>
 
       {/* Section2 Who are we */}
@@ -67,7 +119,7 @@ const About:React.FC = () => {
       </div>
 
       {/* Section3 Build with clarity */}
-      <div>
+      <div className='px-[104px] pb-[82px]'>
         <div className="flex justify-center sm:justify-start pb-[36px]">
 
           <div className="text-[23px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br from-white to-[#71717A] text-transparent bg-clip-text leading-tight mb-6">
@@ -77,8 +129,71 @@ const About:React.FC = () => {
         <p className='text-[24px] text-[#A1A1AA] leading-[44px]'>The client needed a seamless, mobile-optimized purchase system supporting both fiat and crypto payments without disrupting gameplay. It required real-time backend synchronization, secure authentication and payment verification, plus reliable fallback handling for failed crypto transactions—ensuring a smooth and secure user experience.</p>
       </div>
 
+      <div className='flex justify-between px-[104px] '>
+        <div className='flex flex-col justify-center gap-[18px] w-[36.6%] '>
+          {clarityData.map((item, index)=>(
+            <Clarity
+              key={index}
+              head={item.head}
+              content={item.content}
+              isOpen={openIndex === index}
+              onClick={()=>handleToggle(index)}
+            />
+          ))}
+          </div>
+        <img src="/assets/clarity.svg" alt="" className='w-[58%] h-auto'/>
+      </div>
+
+      {/* Section4 Meet the Team */}
+      <div className='px-[104px] pt-[140px]'>
+        <div className="flex justify-center sm:justify-start pb-[36px]">
+
+          <div className="text-[23px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br from-white to-[#71717A] text-transparent bg-clip-text leading-tight mb-6">
+            Meet the Team
+          </div>
+        </div>
+        <p className='text-[24px] text-[#A1A1AA] leading-[44px] pb-[60px]'>Clyde is powered by a tight-knit team of designers, engineers, and strategists — united by curiosity, craftsmanship, and a shared mission to build impactful digital experiences.</p>
+
+        <div className='flex flex-col items-center'>
+          <div className='flex gap-[24px]'>
+            <button className='px-6 py-3 rounded-[10px] bg-[#151515] text-[#E3E3E3] font-semibold text-[20px] leading-[22.4px]'>Founders</button>
+            <button className='px-6 py-3 rounded-[10px] bg-[#151515] text-[#E3E3E3] font-semibold text-[20px] leading-[22.4px]'>Advisors</button>
+          </div>
+          <div className='flex gap-[48px] pt-[61px]'>
+            <div className='flex flex-col items-center'>
+              <img src="/assets/kourosh.svg" alt="" />
+              <h1 className='pt-[38px] text-[24px] text-[#F4E4E4] font-semibold leading-[40px]'>Kourosh Sahm</h1>
+              <p className='text-[20px] text-[#A1A1AA] leading-[28px]'>Founder, CEO</p>
+            </div>
+            <div className='flex flex-col items-center'>
+              <img src="/assets/kourosh.svg" alt="" />
+              <h1 className='pt-[38px] text-[24px] text-[#F4E4E4] font-semibold leading-[40px]'>Momin</h1>
+              <p className='text-[20px] text-[#A1A1AA] leading-[28px]'>Founder, CEO</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      {/* Section5 What our clients say */}
       <div>
-        
+        <div className="flex justify-center sm:justify-start pb-[36px]">
+
+          <div className="text-[23px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br from-white to-[#71717A] text-transparent bg-clip-text leading-tight mb-6">
+            What Our Clients Say
+          </div>
+        </div>
+        <p className='text-[24px] text-[#A1A1AA] leading-[44px] pb-[60px]'>We craft digital products that look sharp and work flawlessly. From games to enterprise tools, we blend design, strategy, and tech to build experiences that scale and perform.</p>
+      </div>
+      <div>
+        <div>
+          <img src="/assets/aboutavatar.svg" alt="" />
+          <div>
+            <h1 className='text-[20px] text-[#F7F7F7] font-bold leading-[30px]'>Mila McSabbu</h1>
+            <p className='text-[14px] text-white leading-[24px] '>Product Head at Gameverse</p>
+          </div>
+        </div>
+        <p>“ Clyde completely transformed our product experience. The design was not just beautiful, it solved real usability issues and engagement ” </p>
       </div>
     </div>
   )

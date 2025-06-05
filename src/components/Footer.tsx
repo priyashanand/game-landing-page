@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Footer() {
   return (
     <footer className="flex flex-col items-center px-[104px] pt-6 pb-6 max-md:px-5">
@@ -6,10 +8,10 @@ function Footer() {
           Clyde.
         </h2>
         <nav className="flex sm:gap-[30px] items-center justify-between self-stretch my-auto text-[14px] sm:text-lg font-medium min-h-[49px min-w-[60px] text-[#9D9D9D] sm:text-neutral-200 px-[30px] sm:px-0">
-          <a href="#" className="self-stretch my-auto hover:text-white">Home</a>
-          <a href="/games" className="self-stretch my-auto hover:text-white">Games</a>
-          <a href="/casestudies" className="self-stretch my-auto hover:text-white">CaseStudies</a>
-          <a href="/contact" className="self-stretch my-auto hover:text-white">Contact Us</a>
+          <Link to="/" className="self-stretch my-auto hover:text-white">Home</Link>
+          <Link to="/games" className="self-stretch my-auto hover:text-white">Games</Link>
+          <Link to="/casestudies" className="self-stretch my-auto hover:text-white">CaseStudies</Link>
+          <Link to="/contact" className="self-stretch my-auto hover:text-white">Contact Us</Link>
         </nav>
       </div>
       <div className="sm:hidden w-full pt-[22px] border-t-1 border-[#111111]">
