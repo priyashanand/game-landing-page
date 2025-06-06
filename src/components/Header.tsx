@@ -34,8 +34,8 @@ const Header = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-[30px] absolute left-1/2 transform -translate-x-1/2 top-[15px]">
           <Link to="/" className={linkClasses(isHome)}>Home</Link>
-          <Link to="/games" className={linkClasses(isGames)}>Games</Link>
           <Link to="/about" className={linkClasses(isAbout)}>About Us</Link>
+          <Link to="/games" className={linkClasses(isGames)}>Games</Link>
           <Link to="/casestudies" className={linkClasses(isCaseStudies)}>CaseStudies</Link>
         </nav>
 

@@ -1,28 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import MobNetsol from '../components/MobNetsol';
 
-const Fleet = ()=>(<svg xmlns="http://www.w3.org/2000/svg" width="217" height="215" viewBox="0 0 217 215" fill="none">
-  <mask id="path-1-inside-1_646_294" fill="white">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M107.5 215C166.871 215 215 166.871 215 107.5C215 48.1294 166.871 0 107.5 0C48.1294 0 0 48.1294 0 107.5C0 166.871 48.1294 215 107.5 215Z"/>
-  </mask>
-  <g clip-path="url(#paint0_angular_646_294_clip_path)" data-figma-skip-parse="true" mask="url(#path-1-inside-1_646_294)"><g transform="matrix(0.1075 0 0 0.1075 107.5 107.5)"><foreignObject x="-1260.47" y="-1260.47" width="2520.93" height="2520.93">
-    
-    <svg
-  xmlns="http://www.w3.org/1999/xhtml"
-  style={{
-    background: 'conic-gradient(from 90deg, rgba(102, 16, 242, 1) 0deg, rgba(102, 101, 221, 1) 139.13deg, rgba(52, 209, 149, 1) 139.96deg, rgba(52, 209, 191, 1) 239.188deg, rgba(255, 113, 91, 1) 240.062deg, rgba(255, 161, 91, 1) 360deg, rgba(221, 101, 101, 1) 360deg)',
-    height: '100%',
-    width: '100%',
-    opacity: 1,
-  }}
-></svg>
-</foreignObject></g></g><path d="M107.5 215V243C182.335 243 243 182.335 243 107.5H215H187C187 151.407 151.407 187 107.5 187V215ZM215 107.5H243C243 32.6654 182.335 -28 107.5 -28V0V28C151.407 28 187 63.5934 187 107.5H215ZM107.5 0V-28C32.6654 -28 -28 32.6654 -28 107.5H0H28C28 63.5934 63.5934 28 107.5 28V0ZM0 107.5H-28C-28 182.335 32.6654 243 107.5 243V215V187C63.5934 187 28 151.407 28 107.5H0Z" data-figma-gradient-fill="{&quot;type&quot;:&quot;GRADIENT_ANGULAR&quot;,&quot;stops&quot;:[{&quot;color&quot;:{&quot;r&quot;:0.40000000596046448,&quot;g&quot;:0.062745101749897003,&quot;b&quot;:0.94901961088180542,&quot;a&quot;:1.0},&quot;position&quot;:0.0},{&quot;color&quot;:{&quot;r&quot;:0.40000000596046448,&quot;g&quot;:0.39607843756675720,&quot;b&quot;:0.86666667461395264,&quot;a&quot;:1.0},&quot;position&quot;:0.38647350668907166},{&quot;color&quot;:{&quot;r&quot;:0.20392157137393951,&quot;g&quot;:0.81960785388946533,&quot;b&quot;:0.58751457929611206,&quot;a&quot;:1.0},&quot;position&quot;:0.38877668976783752},{&quot;color&quot;:{&quot;r&quot;:0.20392157137393951,&quot;g&quot;:0.81960785388946533,&quot;b&quot;:0.74901962280273438,&quot;a&quot;:1.0},&quot;position&quot;:0.66441190242767334},{&quot;color&quot;:{&quot;r&quot;:1.0,&quot;g&quot;:0.44313725829124451,&quot;b&quot;:0.35686275362968445,&quot;a&quot;:1.0},&quot;position&quot;:0.66683924198150635},{&quot;color&quot;:{&quot;r&quot;:1.0,&quot;g&quot;:0.63324594497680664,&quot;b&quot;:0.35686275362968445,&quot;a&quot;:1.0},&quot;position&quot;:1.0},{&quot;color&quot;:{&quot;r&quot;:0.86666667461395264,&quot;g&quot;:0.39607843756675720,&quot;b&quot;:0.39607843756675720,&quot;a&quot;:1.0},&quot;position&quot;:1.0}],&quot;stopsVar&quot;:[],&quot;transform&quot;:{&quot;m00&quot;:215.0,&quot;m01&quot;:0.0,&quot;m02&quot;:0.0,&quot;m10&quot;:0.0,&quot;m11&quot;:215.0,&quot;m12&quot;:0.0},&quot;opacity&quot;:1.0,&quot;blendMode&quot;:&quot;NORMAL&quot;,&quot;visible&quot;:true}" mask="url(#path-1-inside-1_646_294)"/>
-  <path d="M187 107.5H215" stroke="white" stroke-width="4" stroke-linecap="square"/>
-  <path d="M52 13C52 13 69 39 69 39" stroke="white" stroke-width="4" stroke-linecap="square"/>
-  <path d="M27 180L49 159" stroke="white" stroke-width="4" stroke-linecap="square"/>
-  <defs>
-    <clipPath id="paint0_angular_646_294_clip_path"><path d="M107.5 215V243C182.335 243 243 182.335 243 107.5H215H187C187 151.407 151.407 187 107.5 187V215ZM215 107.5H243C243 32.6654 182.335 -28 107.5 -28V0V28C151.407 28 187 63.5934 187 107.5H215ZM107.5 0V-28C32.6654 -28 -28 32.6654 -28 107.5H0H28C28 63.5934 63.5934 28 107.5 28V0ZM0 107.5H-28C-28 182.335 32.6654 243 107.5 243V215V187C63.5934 187 28 151.407 28 107.5H0Z" mask="url(#path-1-inside-1_646_294)"/></clipPath></defs>
-    </svg>)
+
 
 const CustomIcon = ({ width = 28, height = 29, fill = '#38E8EE', ...props }) => (
   <svg
@@ -99,245 +79,250 @@ const Stars = () => (<svg xmlns="http://www.w3.org/2000/svg" width="86" height="
 const Netsol:React.FC = () => {
   return (
     <div>
-      <div className='text-[20px] text-[#A1A1AA] leading-8 px-[104px] pb-[51px]'>
-        Casestudies {'>'} <span className='text-[#00C6CC]'>Revolving Games</span>
-      </div>
+      <div className='hidden sm:block'>
+        <div className='text-[20px] text-[#A1A1AA] leading-8 px-[104px] pt-[80px] pb-[80px]'>
+          Casestudies {'>'} <span className='text-[#00C6CC]'>Netsol</span>
+        </div>
 
-      <div className='flex flex-col items-center gap-[122px] px-[104px] pb-[100px]'>
-        <div className='flex flex-col items-center gap-[48px]'>
-          <h1 className='text-white text-[44px] leading-[54px] text-center tracking-[-1.2px] font-bold'>Premium private ride-hailing platform for a <br /> leading auto brand</h1>
-          <p className='text-[22px] text-[#959595] leading-8 text-center'>Clyde created a secure, white-labeled ride-hailing solution for an elite German automaker. Designed for VIP and executive travel, the system repurposed idle premium vehicles for internal rides—eliminating the need for external platforms like Uber.</p>
-          <div className='flex'>
-            <img src="/assets/avatargroup.png" alt="" className='h-[46px] pr-5'/>
-            <div className='flex items-center'>
-              <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
-              <circle cx="4.16992" cy="4.16992" r="4.16992" fill="white"/>
-              </svg>
-              <p className='text-white pl-2 font-medium'>400k users</p>
+        <div className='flex flex-col items-center gap-[122px] px-[104px] pb-[100px]'>
+          <div className='flex flex-col items-center gap-[48px]'>
+            <h1 className='text-white text-[44px] leading-[54px] text-center tracking-[-1.2px] font-bold'>Premium private ride-hailing platform for a <br /> leading auto brand</h1>
+            <p className='text-[22px] text-[#959595] leading-8 text-center'>Clyde created a secure, white-labeled ride-hailing solution for an elite German automaker. Designed for VIP and executive travel, the system repurposed idle premium vehicles for internal rides—eliminating the need for external platforms like Uber.</p>
+            <div className='flex'>
+              <img src="/assets/avatargroup.png" alt="" className='h-[46px] pr-5'/>
+              <div className='flex items-center'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+                <circle cx="4.16992" cy="4.16992" r="4.16992" fill="white"/>
+                </svg>
+                <p className='text-white pl-2 font-medium'>400k users</p>
+              </div>
+            </div>
+          </div>
+          <img src="/assets/netsolimg1.svg" alt="" className='w-full'/>
+        </div>
+
+        {/* Overview */}
+        <div className='px-[104px]'>
+        <div className='px-[104px] h-[1px] w-full bg-[#161515]'></div>
+        </div>
+        <div className='px-[104px] pt-[60px] pb-[70px] '>
+          <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[40px]'>Overview</h1>
+          <p className='text-[22px] text-[#BEBEBE] font-medium leading-8'>A world-class automotive giant needed a private ride-hailing solution that maximized the ROI of unused luxury vehicles while delivering a seamless, secure experience for their executives. Clyde designed and deployed an internal platform enabling fleet control, privacy, and ride optimization.</p>
+        </div>
+
+        {/* Challenges */}
+        <div className='px-[104px]'>
+        <div className='px-[104px] h-[1px] w-full bg-[#161515]'></div>
+        </div>
+        <div className='px-[104px] pt-[60px] pb-[70px]'>
+          <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[40px]'>Challenges</h1>
+          <p className='text-[22px] text-[#A1A1AA] leading-8'>The client needed a fully private alternative to commercial ride-hailing apps. The solution had to ensure high availability, fleet utilization, and airtight security while providing a top-tier passenger experience for high-ranking executives.</p>
+        </div>
+
+        {/* How did we build the VIP Ride-Hailing App? */}
+        <div className='px-[104px]'>
+        <div className='px-[104px] h-[1px] w-full bg-[#161515]'></div>
+        </div>
+        <div className='px-[104px] pt-[60px] pb-[80px]'>
+          <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[40px]'>How did we build the VIP Ride-Hailing App?</h1>
+          <div className='flex gap-[35px]'>
+            <div className='bg-[#3245FF]  rounded-[20px] pt-6 pl-6 pr-[29px] pb-[50px]'>
+              <div><RectSvg/></div>
+              <h1 className='text-[#F3F4F6] text-[32px] font-semibold leading-[48px] pt-[25px]'>Smart Ride Matching</h1>
+              <p className='text-[16px] text-[#F3F4F6] leading-6 font-medium pt-[21px]'>Intelligent dispatch system prioritizing executive travel requests.</p>
+            </div>
+            <div className='rounded-[20px] pt-6 pl-6 pr-[29px] pb-[50px]'
+            style={{
+              background: 'linear-gradient(84deg, #325CB5 0%, #47C9E3 100%)',
+            }}
+            >
+              <div><CircleSvg/></div>
+              <h1 className='text-[#F3F4F6] text-[32px] font-semibold leading-[48px] pt-[25px]'>Live Fleet Management</h1>
+              <p className='text-[16px] text-[#F3F4F6] leading-6 font-medium pt-[21px]'>Real-time vehicle tracking, estimated arrival, and dynamic routing.</p>
+            </div>
+            <div className='rounded-[20px] pt-6 pl-6 pr-[29px] pb-[50px]'
+            style={{
+              background: 'linear-gradient(84deg, #DC3554 0%, #EA3DCC 100%)',
+            }}
+            >
+              <div><CircleSvg/></div>
+              <h1 className='text-[#F3F4F6] text-[32px] font-semibold leading-[48px] pt-[25px]'>Admin Command Centre</h1>
+              <p className='text-[16px] text-[#F3F4F6] leading-6 font-medium pt-[21px]'>Web dashboard with analytics, ride summaries, and vehicle performance.</p>
             </div>
           </div>
         </div>
-        <img src="/assets/netsolimg1.svg" alt="" className='w-full'/>
-      </div>
 
-            {/* Overview */}
-      <div className='px-[104px]'>
-      <div className='px-[104px] h-[1px] w-full bg-[#161515]'></div>
-      </div>
-      <div className='px-[104px] pt-[60px] pb-[70px] '>
-        <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[40px]'>Overview</h1>
-        <p className='text-[22px] text-[#BEBEBE] font-medium leading-8'>A world-class automotive giant needed a private ride-hailing solution that maximized the ROI of unused luxury vehicles while delivering a seamless, secure experience for their executives. Clyde designed and deployed an internal platform enabling fleet control, privacy, and ride optimization.</p>
-      </div>
 
-      {/* Challenges */}
-      <div className='px-[104px]'>
-      <div className='px-[104px] h-[1px] w-full bg-[#161515]'></div>
-      </div>
-      <div className='px-[104px] pt-[60px] pb-[70px]'>
-        <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[40px]'>Challenges</h1>
-        <p className='text-[22px] text-[#A1A1AA] leading-8'>The client needed a fully private alternative to commercial ride-hailing apps. The solution had to ensure high availability, fleet utilization, and airtight security while providing a top-tier passenger experience for high-ranking executives.</p>
-      </div>
-
-      {/* How did we build the VIP Ride-Hailing App? */}
-      <div className='px-[104px]'>
-      <div className='px-[104px] h-[1px] w-full bg-[#161515]'></div>
-      </div>
-      <div className='px-[104px] pt-[60px] pb-[80px]'>
-        <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[40px]'>How did we build the VIP Ride-Hailing App?</h1>
-        <div className='flex gap-[35px]'>
-          <div className='bg-[#3245FF]  rounded-[20px] pt-6 pl-6 pr-[29px] pb-[50px]'>
-            <div><RectSvg/></div>
-            <h1 className='text-[#F3F4F6] text-[32px] font-semibold leading-[48px] pt-[25px]'>Smart Ride Matching</h1>
-            <p className='text-[16px] text-[#F3F4F6] leading-6 font-medium pt-[21px]'>Intelligent dispatch system prioritizing executive travel requests.</p>
-          </div>
-          <div className='rounded-[20px] pt-6 pl-6 pr-[29px] pb-[50px]'
-          style={{
-            background: 'linear-gradient(84deg, #325CB5 0%, #47C9E3 100%)',
-          }}
-          >
-            <div><CircleSvg/></div>
-            <h1 className='text-[#F3F4F6] text-[32px] font-semibold leading-[48px] pt-[25px]'>Live Fleet Management</h1>
-            <p className='text-[16px] text-[#F3F4F6] leading-6 font-medium pt-[21px]'>Real-time vehicle tracking, estimated arrival, and dynamic routing.</p>
-          </div>
-          <div className='rounded-[20px] pt-6 pl-6 pr-[29px] pb-[50px]'
-          style={{
-             background: 'linear-gradient(84deg, #DC3554 0%, #EA3DCC 100%)',
-          }}
-          >
-            <div><CircleSvg/></div>
-            <h1 className='text-[#F3F4F6] text-[32px] font-semibold leading-[48px] pt-[25px]'>Live Fleet Management</h1>
-            <p className='text-[16px] text-[#F3F4F6] leading-6 font-medium pt-[21px]'>Web dashboard with analytics, ride summaries, and vehicle performance.</p>
+        {/* Tech Stack */}
+        <div className='px-[104px]'>
+        <div className='px-[104px] h-[1px] w-full bg-[#161515]'></div>
+        </div>
+        <div className='px-[104px] pt-[60px]'>
+          <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[40px]'>Tech Stack</h1>
+          <div className='flex flex-col gap-[35px]'>
+            <div className='flex gap-[34px]'>
+              <div className='flex items-center w-1/2 pl-[28px] py-[31px] border border-[#212121] rounded-[24px]'>
+                <div className='p-[15px] bg-[#EBEBEB0D] rounded-xl'>
+                  <CustomIcon/>
+                </div>
+                <p className='text-[22px] leading-7 text-[#EFEFEF] pl-[43px]'><span className='text-[#939393]'>Frontend:</span>React Native (Rider & Driver)</p>
+              </div>
+              <div className='flex items-center w-1/2 pl-[28px] py-[31px] border border-[#212121] rounded-[24px]'>
+                <div className='p-[15px]  bg-[#EBEBEB0D] rounded-xl'>
+                  <CustomIcon/>
+                </div>
+                <p className='text-[22px] leading-7 text-[#EFEFEF] pl-[43px]'><span className='text-[#939393]'>Backend:</span>Node.js, PostgreSQL</p>
+              </div>
+            </div>
+            <div className='flex gap-[34px]'>
+              <div className='flex items-center w-1/2 pl-[28px] py-[31px] border border-[#212121] rounded-[24px]'>
+                <div className='p-[15px] bg-[#EBEBEB0D] rounded-xl'>
+                  <CustomIcon/>
+                </div>
+                <p className='text-[22px] leading-7 text-[#EFEFEF] pl-[43px]'><span className='text-[#939393]'>Mapping:</span>Google Maps API, Custom Routing Logic</p>
+              </div>
+              <div className='flex items-center w-1/2 pl-[28px] py-[31px] border border-[#212121] rounded-[24px]'>
+                <div className='p-[15px] bg-[#EBEBEB0D] rounded-xl'>
+                  <CustomIcon/>
+                </div>
+                <p className='text-[22px] leading-7 text-[#EFEFEF] pl-[43px]'><span className='text-[#939393]'>Hosting:</span>AWS (secure, isolated infra)</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
+        {/* what we delivered */}
+        <div className='px-[104px] pt-[150px] pb-[80px]'>
+          <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[59px]'>What We Delivered</h1>
+          <div className='flex gap-[52px]'>
+            <div className='flex flex-col justify-center gap-[20px] py-[23px] w-[58%]'>
+              <div className='flex items-center py-[21px] px-[50px] bg-[#121315] border border-[#8A8A8A] rounded-full'>
+                <CheckIcon/>
+                <p className='text-[24px] text-white leading-[30px] pl-[12px]'>Boosted purchase conversion rates</p>
+              </div>
+              <div className='flex items-center py-[21px] px-[50px] bg-[#121315] border border-[#8A8A8A] rounded-full'>
+                <CheckIcon/>
+                <p className=' text-[24px] text-white leading-[30px] pl-[12px]'>Improved User retention</p>
+              </div>
+              <div className='flex items-center py-[21px] px-[50px] bg-[#121315] border border-[#8A8A8A] rounded-full'>
+                <CheckIcon/>
+                <p className='text-[24px] text-white leading-[30px] pl-[12px]'>Reduced drop-offs across payment flows</p>
+              </div>
+              <div className='flex items-center py-[21px] px-[50px] bg-[#121315] border border-[#8A8A8A] rounded-full'>
+                <CheckIcon/>
+                <p className='text-[24px] text-white leading-[30px] pl-[12px]'>Boosted purchase conversion rates</p>
+              </div>
+              <div className='flex items-center py-[21px] px-[50px] bg-[#121315] border border-[#8A8A8A] rounded-full'>
+                <CheckIcon/>
+                <p className='text-[24px] text-white leading-[30px] pl-[12px]'>Boosted purchase conversion rates</p>
+              </div>
+            </div>
 
-      {/* Tech Stack */}
-      <div className='px-[104px]'>
-      <div className='px-[104px] h-[1px] w-full bg-[#161515]'></div>
-      </div>
-      <div className='px-[104px] pt-[60px]'>
-        <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[40px]'>Tech Stack</h1>
-        <div className='flex flex-col gap-[35px]'>
+            <img src="/assets/deliver1.png" alt="" className='w-[42%]'/>
+          </div>
+        </div>
+
+        {/* Tracking Performance and Measuring Results */}
+        <div className='px-[104px]'>
+        <div className='px-[104px] h-[1px] w-full bg-[#161515]'></div>
+        </div>
+        <div className='px-[104px] pt-[70px] '>
+          <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[40px]'>Tracking Performance and Measuring Results</h1>
           <div className='flex gap-[34px]'>
-            <div className='flex items-center w-1/2 pl-[28px] py-[31px] border border-[#212121] rounded-[24px]'>
-              <div className='p-[15px] bg-[#EBEBEB0D] rounded-xl'>
-                <CustomIcon/>
+            <div className='flex flex-col justify-between py-[30px] w-[22.36%] bg-[#101215] rounded-2xl'>
+              <h1 className='text-4 leading-5 font-semibold text-[#BBBBBB] tracking-[0.01px] px-[30px]'>
+                Fleet Utilization Breakdown
+              </h1>
+
+              {/* Centered Fleet Component */}
+              <div className='flex justify-center items-center px-[30px] pt-[35px] pb-[30px]'>
+                <div className='absolute pt-7'>
+                <h1 className=' text-[16px] text-[#CFCFCF] font-semibold'>Active Vehicles</h1>
+                <p className='text-[10px] text-[#696D6E] font-semibold text-center'>100+</p>
+                </div>
+                <img src="/assets/donut.png" alt="" />
               </div>
-              <p className='text-[22px] leading-7 text-[#EFEFEF] pl-[43px]'><span className='text-[#939393]'>Frontend:</span>React Native (Rider & Driver)</p>
+
+              <div className='flex justify-between px-[24px]'>
+                <div className='bg-[#FF715B] text-[10px] rounded-[4px] text-white font-medium leading-5 px-2'>
+                  S-CLASS
+                </div>
+                <div className='bg-[#663EE6] text-[10px] rounded-1 text-white font-medium leading-5 px-2'>
+                  F-SERIES
+                </div>
+                <div className='bg-[#33D09A] text-[10px] rounded-1 text-white font-medium leading-5 px-5'>
+                  EOS
+                </div>
+              </div>
             </div>
-            <div className='flex items-center w-1/2 pl-[28px] py-[31px] border border-[#212121] rounded-[24px]'>
-              <div className='p-[15px]  bg-[#EBEBEB0D] rounded-xl'>
-                <CustomIcon/>
+
+
+
+            <div className='flex flex-col justify-between px-[30px] pt-[30px] bg-[#101215] w-[46.58%] rounded-2xl'>
+              <h1 className='text-4 leading-5 font-semibold text-[#BBBBBB]'>Last Month Ride Activity Snapshot</h1>
+              <div className='flex gap-7'>
+                <div>
+                  <h1 className='text-[#0496FF] text-[28px] font-bold leading-10'>68.4</h1>
+                  <p className='text-[#727677]'>Bookings</p>
+                </div>
+                <div className='w-[1px] bg-[#E4EAF0]'></div>
+                <div>
+                  <h1 className='text-[#FF715B] text-[28px] font-bold leading-10'>55.2</h1>
+                  <p className='text-[#727677] '>completed Rides</p>
+                </div>
               </div>
-              <p className='text-[22px] leading-7 text-[#EFEFEF] pl-[43px]'><span className='text-[#939393]'>Backend:</span>Node.js, PostgreSQL</p>
+              {/* w-[89.2%] */}
+              <img src="/assets/graph1.png" alt="" />
             </div>
-          </div>
-          <div className='flex gap-[34px]'>
-            <div className='flex items-center w-1/2 pl-[28px] py-[31px] border border-[#212121] rounded-[24px]'>
-              <div className='p-[15px] bg-[#EBEBEB0D] rounded-xl'>
-                <CustomIcon/>
+            {/* <img src="/assets/tracking.png" alt="" className='w-[69.6%]'/> */}
+            <div className='flex flex-col w-[24.3%] gap-[25px] '>
+              <div style={{background: 'linear-gradient(180deg, rgba(0, 142, 153, 0.26) 0%, rgba(255, 255, 255, 0.00) 100%)'}} className='flex flex-col items-center gap-[8px] h-1/2 justify-center  rounded-2xl'>
+                <h1 className='text-[40px] text-white font-semibold text-center'>70%</h1>
+                <p  className='text-[#B5B2B2] text-center text-[16px]'>Increase in player retention</p>
               </div>
-              <p className='text-[22px] leading-7 text-[#EFEFEF] pl-[43px]'><span className='text-[#939393]'>Mapping:</span>Google Maps API, Custom Routing Logic</p>
-            </div>
-            <div className='flex items-center w-1/2 pl-[28px] py-[31px] border border-[#212121] rounded-[24px]'>
-              <div className='p-[15px] bg-[#EBEBEB0D] rounded-xl'>
-                <CustomIcon/>
+              <div style={{background: 'linear-gradient(180deg, rgba(0, 142, 153, 0.26) 0%, rgba(255, 255, 255, 0.00) 100%)'}} className='flex flex-col items-center gap-[8px] h-1/2 justify-center  rounded-2xl'>
+                <h1 className='text-[40px] font-semibold text-white text-center'>3x</h1>
+                <p  className='text-[#B5B2B2] text-[16px] '>Longer average play sessions</p>
               </div>
-              <p className='text-[22px] leading-7 text-[#EFEFEF] pl-[43px]'><span className='text-[#939393]'>Hosting:</span>AWS (secure, isolated infra)</p>
             </div>
           </div>
         </div>
-      </div>
-
-      {/* what we delivered */}
-      <div className='px-[104px] pt-[150px] pb-[80px]'>
-        <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[59px]'>What We Delivered</h1>
-        <div className='flex gap-[52px]'>
-          <div className='flex flex-col justify-center gap-[20px] py-[23px] w-[58%]'>
-            <div className='flex items-center py-[21px] px-[50px] bg-[#121315] border border-[#8A8A8A] rounded-full'>
-              <CheckIcon/>
-              <p className='text-[24px] text-white leading-[30px] pl-[12px]'>Boosted purchase conversion rates</p>
-            </div>
-            <div className='flex items-center py-[21px] px-[50px] bg-[#121315] border border-[#8A8A8A] rounded-full'>
-              <CheckIcon/>
-              <p className=' text-[24px] text-white leading-[30px] pl-[12px]'>Improved User retention</p>
-            </div>
-            <div className='flex items-center py-[21px] px-[50px] bg-[#121315] border border-[#8A8A8A] rounded-full'>
-              <CheckIcon/>
-              <p className='text-[24px] text-white leading-[30px] pl-[12px]'>Reduced drop-offs across payment flows</p>
-            </div>
-            <div className='flex items-center py-[21px] px-[50px] bg-[#121315] border border-[#8A8A8A] rounded-full'>
-              <CheckIcon/>
-              <p className='text-[24px] text-white leading-[30px] pl-[12px]'>Boosted purchase conversion rates</p>
-            </div>
-            <div className='flex items-center py-[21px] px-[50px] bg-[#121315] border border-[#8A8A8A] rounded-full'>
-              <CheckIcon/>
-              <p className='text-[24px] text-white leading-[30px] pl-[12px]'>Boosted purchase conversion rates</p>
-            </div>
-          </div>
-
-          <img src="/assets/deliver1.png" alt="" className='w-[42%]'/>
-        </div>
-      </div>
-
-      {/* Tracking Performance and Measuring Results */}
-      <div className='px-[104px]'>
-      <div className='px-[104px] h-[1px] w-full bg-[#161515]'></div>
-      </div>
-      <div className='px-[104px] pt-[70px] '>
-        <h1 className=' text-[24px] sm:text-[48px] font-bold tracking-[-1.2px] bg-gradient-to-br text-center sm:text-left from-white to-[#71717A] text-transparent bg-clip-text leading-tight pt-[40px] sm:pt-0 pb-[40px]'>Tracking Performance and Measuring Results</h1>
-        <div className='flex gap-[34px]'>
-          <div className='flex flex-col justify-between py-[30px] w-[22.36%] bg-[#101215] rounded-2xl'>
-            <h1 className='text-4 leading-5 font-semibold text-[#BBBBBB] tracking-[0.01px] px-[30px]'>
-              Fleet Utilization Breakdown
-            </h1>
-
-            {/* Centered Fleet Component */}
-            <div>
-            <h1 className=''>Active Vehicles</h1>
-            <p>100+</p>
-            </div>
-            <div className='flex justify-center items-center px-[30px]'>
-              <Fleet />
-            </div>
-
-            <div className='flex justify-between px-[24px]'>
-              <div className='bg-[#FF715B] text-[10px] rounded-[4px] text-white font-medium leading-5 px-2'>
-                S-CLASS
-              </div>
-              <div className='bg-[#663EE6] text-[10px] rounded-1 text-white font-medium leading-5 px-2'>
-                F-SERIES
-              </div>
-              <div className='bg-[#33D09A] text-[10px] rounded-1 text-white font-medium leading-5 px-5'>
-                EOS
-              </div>
-            </div>
-          </div>
-
-
-
-          <div className='flex flex-col gap-[19px] px-[30px] pt-[30px] bg-[#101215] w-[46.58%] rounded-2xl'>
-            <h1 className='text-4 leading-5 font-semibold text-[#BBBBBB]'>Last Month Ride Activity Snapshot</h1>
-            <div className='flex gap-7'>
+        
+        {/* founder */}
+        <div className='px-[104px] pt-[80px] pb-[68px]'>
+          <div className='flex flex-col px-[38px] py-[44px] gap-[38px] bg-[#1D2123] rounded-[24px]'>
+            <div className='flex gap-6'>
+              <img src="/assets/netsolfounder.png" alt="" className='h-[58px]'/>
               <div>
-                <h1 className='text-[#0496FF] text-[28px] font-bold leading-10'>68.4</h1>
-                <p className='text-[#727677]'>Bookings</p>
-              </div>
-              <div className='w-[1px] bg-[#E4EAF0]'></div>
-              <div>
-                <h1 className='text-[#FF715B] text-[28px] font-bold leading-10'>55.2</h1>
-                <p className='text-[#727677] '>completed Rides</p>
+                <h1 className='text-[20px] text-white '>Ashley Cooper, CEO - Netsol</h1>
+                <div>
+                  <Stars/>
+                </div>
               </div>
             </div>
-            {/* w-[89.2%] */}
-            <img src="/assets/graph.png" alt="" />
-          </div>
-          {/* <img src="/assets/tracking.png" alt="" className='w-[69.6%]'/> */}
-          <div className='flex flex-col w-[24.3%] gap-[25px] '>
-            <div style={{background: 'linear-gradient(180deg, rgba(0, 142, 153, 0.26) 0%, rgba(255, 255, 255, 0.00) 100%)'}} className='flex flex-col items-center gap-[8px] h-1/2 justify-center  rounded-2xl'>
-              <h1 className='text-[40px] text-white font-semibold text-center'>70%</h1>
-              <p  className='text-[#B5B2B2] text-center text-[16px]'>Increase in player retention</p>
-            </div>
-            <div style={{background: 'linear-gradient(180deg, rgba(0, 142, 153, 0.26) 0%, rgba(255, 255, 255, 0.00) 100%)'}} className='flex flex-col items-center gap-[8px] h-1/2 justify-center  rounded-2xl'>
-              <h1 className='text-[40px] font-semibold text-white text-center'>3x</h1>
-              <p  className='text-[#B5B2B2] text-[16px] '>Longer average play sessions</p>
-            </div>
+            <div className='text-[#DFDFDF] leading-[30px] text-[20px]'>Working with Clyde was a game-changer. We needed a private, secure, and premium ride-hailing solution for our executives—and they delivered exactly that. The platform not only aligned with our brand’s standards but also gave us full control over our fleet. It’s streamlined, reliable, and built entirely around our needs.</div>
           </div>
         </div>
-      </div>
-      
-      {/* founder */}
-      <div className='px-[104px] pt-[80px] pb-[68px]'>
-        <div className='flex flex-col px-[38px] py-[44px] gap-[38px] bg-[#1D2123] rounded-[24px]'>
-          <div className='flex gap-6'>
-            <img src="/assets/netsolfounder.png" alt="" className='h-[58px]'/>
-            <div>
-              <h1 className='text-[20px] text-white '>Ashley Cooper, CEO - Netsol</h1>
-              <div>
-                <Stars/>
-              </div>
-            </div>
-          </div>
-          <div className='text-[#DFDFDF] leading-[30px] text-[20px]'>Working with Clyde was a game-changer. We needed a private, secure, and premium ride-hailing solution for our executives—and they delivered exactly that. The platform not only aligned with our brand’s standards but also gave us full control over our fleet. It’s streamlined, reliable, and built entirely around our needs.</div>
-        </div>
-      </div>
 
-      <div className='px-[104px] pt-[80px] pb-[68px]'>    
-        <div className='flex gap-[46px]'>
-          <img src="/assets/netsol3.png" alt="" className='w-[42.11%]'/>
-          <img src="/assets/netsol4.png" alt="" className='w-[53.75%]'/>
+        <div className='px-[104px] pt-[80px] pb-[68px]'>    
+          <div className='flex gap-[46px]'>
+            <img src="/assets/netsol3.png" alt="" className='w-[42.11%]'/>
+            <img src="/assets/netsol4.png" alt="" className='w-[53.75%]'/>
+          </div>
+        </div>
+
+        <div className='px-[104px] pt-[80px] pb-[68px]'>    
+          <div className='bg-[url("/assets/bgnetsol.png")] py-[72px] flex flex-col items-center bg-cover
+          bg-center rounded-[32px]'>
+            <h1 className=' text-[40px] font-semibold leading-[58px] tracking-[-1.2px] text-[#EDF3FF]'>Ready to build your private ride platform?</h1>
+            <p className='text-[24px] leading-[58px] tracking-[-1.2px] text-[#747474] pt-4 pb-[48px]'>Take control of your fleet. Go white-label.</p>
+            <Link to="/contact">
+            <button className='text-white bg-[#008E99] py-3 px-5 rounded-[12px]'>Contact Us</button></Link>
+          </div>
         </div>
       </div>
-
-      <div className='px-[104px] pt-[80px] pb-[68px]'>    
-        <div className='bg-[url("/assets/bgnetsol.png")] py-[72px] flex flex-col items-center bg-cover
-         bg-center rounded-[32px]'>
-          <h1 className=' text-[40px] font-semibold leading-[58px] tracking-[-1.2px] text-[#EDF3FF]'>Ready to build your private ride platform?</h1>
-          <p className='text-[24px] leading-[58px] tracking-[-1.2px] text-[#747474] pt-4 pb-[48px]'>Take control of your fleet. Go white-label.</p>
-          <Link to="/contact">
-          <button className='text-white bg-[#008E99] py-3 px-5 rounded-[12px]'>Contact Us</button></Link>
-        </div>
+      <div className='sm:hidden'>
+        <MobNetsol/>
       </div>
     </div>
   )

@@ -5,19 +5,19 @@ import { CircleArrowLeft, CircleArrowRight } from "lucide-react";
 
 const cards = [
   {
-    imgMain: "/assets/visualSlider1.png",
-    title: "Scalable By Design",
-    desc: "As your game evolves, so does the design. From new content drops, expansions - our systems grows"
+    imgMain: "/assets/visualslider1.svg",
+    title: "Modular & Scalable Systems",
+    desc: "Designs built to evolve — whether you’re scaling from MVP to enterprise or from one platform to many."
   },
   {
-    imgMain: "/assets/visualSlider7.png",
-    title: "Built for Play",
-    desc: "A streamlined design system customized for games that puts players first and scales as you grow."
+    imgMain: "/assets/visualslider2.svg",
+    title: "Clarity Over Complexity",
+    desc: "We strip away the noise to focus on what truly matters — ensuring every interface is intuitive and easy to navigate."
   },
   {
-    imgMain: "/assets/visualSlider3.png",
+    imgMain: "/assets/visualslider3.svg",
     title: "Frictionless Gameplay",
-    desc: "We focus on what matters most — the player experience. Clear menu, focused layouts, and controls."
+    desc: "From micro-interactions to layout grids, we sweat the details so your users don’t have to."
   }
 ];
 
@@ -43,10 +43,9 @@ const VisualMobileSlider:React.FC = () => {
             <div className="flex transition-transform duration-300 ease-in-out" style={{ transform: `translateX(-${current * 100}%)` }}>
               {cards.map((card, index) => (
                 <div key={index} className="min-w-full px-2">
-                    <div className="bg-[#101012] border-[#363535] rounded-3xl shadow-md">
+                  <div className="bg-[#101012] border-[#363535] rounded-3xl shadow-md">
                     <div className="rounded-xl flex items-center justify-center ">
-
-                    <img src={card.imgMain} alt="" className="h-auto w-full object-contain" />
+                      <img src={card.imgMain} alt="" className="h-auto w-full object-contain" />
                     </div>
                     {/* <img src="/assets/section4img6.png" alt="" className="h-16 object-contain mb-6" /> */}
                     <div className="text-[16px] font-semibold py-4 px-4 text-[#E4E4E7]">{card.title}</div>

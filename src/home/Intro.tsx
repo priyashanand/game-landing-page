@@ -13,7 +13,8 @@ const Intro: React.FC = () => {
       <p className='sm:hidden text-[#A1A1AA] font-medium text-[13px] sm:text-[20px]'>experiences, and build powerful </p>
       <p className='sm:hidden text-[#A1A1AA] font-medium text-[13px] sm:text-[20px] pb-[33px] sm:pb-[52px]'>digital products that stand out.</p>
 
-      <Link to="/casestudies">
+      <div className='flex gap-[18px]'>
+        <Link to="/casestudies">
         <div className="relative group">
           <span className="absolute w-[127px] h-[1px] left-[18px] top-[37px] rounded bg-gradient-to-r from-cyan-400/0 via-cyan-400/90 to-cyan-400/0" />
           <div className="absolute w-[158px] h-[36px] top-[1px] left-[1px] bg-[#09090B] rounded-full shadow-[0_0_0_1px_rgba(255,255,255,0.1)]" />
@@ -24,8 +25,20 @@ const Intro: React.FC = () => {
           </div>
         </div>
       </Link>
+      <a href="https://calendly.com">
+        <div className="relative group">
+          <span className="absolute w-[127px] h-[1px] left-[18px] top-[37px] rounded bg-gradient-to-r from-cyan-400/0 via-cyan-400/90 to-cyan-400/0" />
+          <div className="absolute w-[158px] h-[36px] top-[1px] left-[1px] bg-[#09090B] rounded-full shadow-[0_0_0_1px_rgba(255,255,255,0.1)]" />
+          <div
+            className="relative z-10 w-[158px] h-[38px] rounded-full flex items-center justify-center text-[#A1A1AA] text-[14px] font-medium leading-[24px]"
+          >
+            Schedule A Call
+          </div>
+        </div>
+      </a>
+      </div>
       <h1></h1>
-      <img src="/assets/homeintro.svg" alt="Game app design" className='w-full h-auto px-[14px] sm:px-[81px] pt-[33px] sm:pt-[64px]'/>
+      <img src="/assets/homeintro1.svg" alt="Game app design" className='w-full h-auto px-[14px] sm:px-[81px] pt-[33px] sm:pt-[64px]'/>
     </div>
   ) 
 }

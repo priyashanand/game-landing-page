@@ -14,15 +14,7 @@ const StoryDesign: React.FC = () => {
       </p>
 
       <div className="hidden sm:flex w-full items-center justify-center">
-        {[1, 2, 3].map((num) => (
-          <div key={num} className="">
-            <img
-              src={`/assets/storyDesign${num}.png`}
-              alt={`Story Design ${num}`}
-              className="w-full object-contain"
-            />
-          </div>
-        ))}
+        <img src="/assets/story.svg" alt="" className='w-full h-auto'/>
       </div>
       <div className='sm:hidden  w-full '>
         <ImageMobileSlider/>

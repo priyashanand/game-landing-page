@@ -24,7 +24,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ iconSrc, title, description }
 
 function GameLogic() {
   return (
-    <section className="w-full px-[22px] sm:px-[104px] pt-[72px] sm:pt-[219px]">
+    <section className="w-full px-[22px] sm:px-[104px] pt-[72px] sm:pt-[219px] sm:pb-[120px]">
       {/* Header Section */}
       <div className="w-full">
         <div className="flex flex-col sm:flex-row gap-[34px] sm:gap-5 items-stretch">

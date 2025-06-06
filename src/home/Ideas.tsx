@@ -20,9 +20,9 @@ const Ideas: React.FC = () => {
 
         <div className="flex items-center gap-6">
           {/* Contact Us button with arrow */}
-          <Link to="/contact">
+          <a href="https://calendly.com">
             <button className="hidden sm:inline-flex items-center gap-2 bg-white text-black text-sm font-medium py-2.5 px-6 rounded-lg hover:bg-gray-200 transition">
-              Contact Us
+              Schedule Call
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -34,7 +34,7 @@ const Ideas: React.FC = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
               </svg>
             </button>
-          </Link>
+          </a>
 
           {/* Explore About Us button */}
           <Link to="/casestudies">
