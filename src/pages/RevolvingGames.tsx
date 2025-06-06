@@ -158,10 +158,10 @@ const RevolvingGames:React.FC = () => {
         {/* images */}
         <div className='px-[104px] pt-[110px] flex flex-col gap-[46px]'>
           <div className='flex gap-[50px]'>
-            <img src="/assets/revimg1.png" alt="" className='w-[54.45%] h-auto'/>
-            <img src="/assets/revimg2.png" alt="" className='w-[41.75%]'/>
+            <img src="/assets/revimg1.svg" alt="" className='w-[54.45%] h-auto'/>
+            <img src="/assets/revimg2.svg" alt="" className='w-[41.75%]'/>
           </div>
-          <img src="/assets/revimg3.png" alt="" />
+          <img src="/assets/revimg3.svg" alt="" />
         </div>
 
 
@@ -192,7 +192,7 @@ const RevolvingGames:React.FC = () => {
               </div>
             </div>
 
-            <img src="/assets/deliver.png" alt="" className='w-1/2'/>
+            <img src="/assets/deliver.svg" alt="" className='w-1/2'/>
           </div>
         </div>
         

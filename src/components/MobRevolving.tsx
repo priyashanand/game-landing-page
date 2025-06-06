@@ -142,8 +142,8 @@ const MobRevolving:React.FC = () => {
 
       {/* images */}
       <div className='px-[22px] pt-[54px] flex flex-col gap-[28px] pb-[54px]'>
-        <img src="/assets/revimg1.png" alt="" className=''/>
-        <img src="/assets/revimg2.png" alt="" className=''/>
+        <img src="/assets/revimg1.svg" alt="" className=''/>
+        <img src="/assets/revimg2.svg" alt="" className=''/>
       </div>
 
 
@@ -177,7 +177,7 @@ const MobRevolving:React.FC = () => {
             </div>
           </div>
 
-          <img src="/assets/revimg3.png" alt="" className='pt-[54px]'/>
+          <img src="/assets/revimg3.svg" alt="" className='pt-[54px]'/>
         </div>
       </div>
       
@@ -218,7 +218,7 @@ const MobRevolving:React.FC = () => {
               <p className='text-[12px] text-[#DFDFDF] pt-4'>Clyde nailed it. The new web purchase flow is seamless, secure, and perfectly integrated with our gameplay. <span className='text-[#32B9C4] font-medium'>Huge boost in conversions, and way fewer support issues.</span> We finally have a web experience that matches the quality of our games.</p>
             </div>
         </div>
-          <img src="/assets/deliver.png" alt="" className='pt-[54px]'/>
+          <img src="/assets/deliver.svg" alt="" className='pt-[54px]'/>
 
       </div>
 

@@ -277,12 +277,12 @@ const Netsol:React.FC = () => {
             {/* <img src="/assets/tracking.png" alt="" className='w-[69.6%]'/> */}
             <div className='flex flex-col w-[24.3%] gap-[25px] '>
               <div style={{background: 'linear-gradient(180deg, rgba(0, 142, 153, 0.26) 0%, rgba(255, 255, 255, 0.00) 100%)'}} className='flex flex-col items-center gap-[8px] h-1/2 justify-center  rounded-2xl'>
-                <h1 className='text-[40px] text-white font-semibold text-center'>70%</h1>
-                <p  className='text-[#B5B2B2] text-center text-[16px]'>Increase in player retention</p>
+                <h1 className='text-[40px] text-white font-semibold text-center'>85%</h1>
+                <p  className='text-[#B5B2B2] text-center text-[16px]'>Fleet utilization in the first month</p>
               </div>
               <div style={{background: 'linear-gradient(180deg, rgba(0, 142, 153, 0.26) 0%, rgba(255, 255, 255, 0.00) 100%)'}} className='flex flex-col items-center gap-[8px] h-1/2 justify-center  rounded-2xl'>
-                <h1 className='text-[40px] font-semibold text-white text-center'>3x</h1>
-                <p  className='text-[#B5B2B2] text-[16px] '>Longer average play sessions</p>
+                <h1 className='text-[40px] font-semibold text-white text-center'>4x</h1>
+                <p  className='text-[#B5B2B2] text-[16px] '>Drop in third-party platform usage</p>
               </div>
             </div>
           </div>
