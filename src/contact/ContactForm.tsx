@@ -30,10 +30,10 @@ const ContactForm: React.FC = () => {
 
     try {
       await emailjs.sendForm(
-        "service_n6y9gkq",     // e.g. "service_abcd123"
-        "template_wsyecmr",    // e.g. "template_xyz"
+        import.meta.env.VITE_SECRET_KEY,     // e.g. "service_abcd123"
+        import.meta.env.VITE_TEMPLATE_KEY,    // e.g. "template_xyz"
         formRef.current,
-        "5cmnfJ5O7U7WGwS3e"      // e.g. "abcd1234publickey"
+        import.meta.env.VITE_PUBLIC_KEY     // e.g. "abcd1234publickey"
       );
       toast("Message sent successfully!");
       reset(); // reset form
