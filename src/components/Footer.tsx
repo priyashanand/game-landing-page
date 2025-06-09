@@ -7,8 +7,9 @@ function Footer() {
         <h2 className="self-stretch my-auto text-[18px] sm:text-2xl text-center sm:text-start font-semibold tracking-tighter leading-tight text-neutral-200">
           Clyde.
         </h2>
-        <nav className="flex sm:gap-[30px] items-center justify-between self-stretch my-auto text-[14px] sm:text-lg font-medium min-h-[49px min-w-[60px] text-[#9D9D9D] sm:text-neutral-200 px-[30px] sm:px-0">
+        <nav className="flex sm:gap-[30px] items-center justify-between self-stretch my-auto text-[12px] sm:text-lg font-medium min-h-[49px min-w-[60px] text-[#9D9D9D] sm:text-neutral-200 ">
           <Link to="/" className="self-stretch my-auto hover:text-white">Home</Link>
+          <Link to="/about" className="self-stretch my-auto hover:text-white">About Us</Link>
           <Link to="/games" className="self-stretch my-auto hover:text-white">Games</Link>
           <Link to="/casestudies" className="self-stretch my-auto hover:text-white">CaseStudies</Link>
           <Link to="/contact" className="self-stretch my-auto hover:text-white">Contact Us</Link>

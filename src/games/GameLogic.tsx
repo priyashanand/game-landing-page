@@ -37,7 +37,7 @@ function GameLogic() {
                   Game Logic –<br />
                   Brains Behind the Play
                 </h2>
-                <Link to="/casestudies">
+                <Link to="/about">
                 <button className="overflow-hidden gap-2.5 self-start px-[24px] sm:px-5 py-[5px] sm:py-7 sm:mt-12 text-[10px] sm:text-xl font-medium leading-none text-white bg-teal-600 rounded-[10px] sm:rounded-xl min-h-[34px] sm:min-h-[72px] w-[157px] sm:w-[277px]">
                   Know More About Us
                 </button>

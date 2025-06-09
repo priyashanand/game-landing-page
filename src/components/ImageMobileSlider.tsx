@@ -5,17 +5,17 @@ import { CircleArrowLeft, CircleArrowRight } from "lucide-react";
 
 const cards = [
   {
-    imgMain: "/assets/visualSlider6.png",
+    imgMain: "/assets/vs6.svg",
     title: "Scalable By Design",
     desc: "As your game evolves, so does the design. From new content drops, expansions - our systems grows"
   },
   {
-    imgMain: "/assets/visualSlider4.png",
+    imgMain: "/assets/vs5.svg",
     title: "Scalable By Design",
     desc: "As your game evolves, so does the design. From new content drops, expansions - our systems grows"
   },
   {
-    imgMain: "/assets/visualSlider5.png",
+    imgMain: "/assets/vs4.svg",
     title: "Scalable By Design",
     desc: "As your game evolves, so does the design. From new content drops, expansions - our systems grows"
   }

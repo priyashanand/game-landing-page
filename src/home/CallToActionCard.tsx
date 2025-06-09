@@ -42,11 +42,11 @@ const CallToActionCard: React.FC = () => {
         insight. products evolve.ment.
       </p>
       <div className="flex gap-2 justify-center max-sm:w-full">
-        <Link to="/contact">
+        <a href="https://calendly.com">
         <Button variant="primary" className="">
-          Contact Us
+          Schedule A Call
         </Button>
-        </Link>
+        </a>
         <Link to="/casestudies">
         <Button variant="secondary" className="">
           Explore Our Work
